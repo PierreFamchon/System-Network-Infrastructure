@@ -1,0 +1,135 @@
+Current configuration : 2135 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Succursale
+!
+!
+!
+!
+ip dhcp excluded-address 172.16.0.1
+ip dhcp excluded-address 172.16.32.1
+ip dhcp excluded-address 172.16.64.1
+ip dhcp excluded-address 172.16.96.1
+ip dhcp excluded-address 172.16.128.1
+!
+ip dhcp pool vlan10
+ network 172.16.0.0 255.255.224.0
+ default-router 172.16.0.1
+ip dhcp pool vlan20
+ network 172.16.32.0 255.255.224.0
+ default-router 172.16.32.1
+ip dhcp pool vlan30
+ network 172.16.64.0 255.255.224.0
+ default-router 172.16.64.1
+ip dhcp pool vlan40
+ network 172.16.96.0 255.255.224.0
+ default-router 172.16.96.1
+ip dhcp pool vlan50
+ network 172.16.128.0 255.255.224.0
+ default-router 172.16.128.1
+ domain-name wr
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2911/K9 sn FTX1524JMWM-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Tunnel1
+ ip address 192.168.1.2 255.255.255.0
+ mtu 1476
+ tunnel source GigabitEthernet0/1
+ tunnel destination 10.50.0.1
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ ip nat inside
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.1
+ encapsulation dot1Q 10
+ ip address 172.16.0.1 255.255.224.0
+!
+interface GigabitEthernet0/0.2
+ encapsulation dot1Q 20
+ ip address 172.16.32.1 255.255.224.0
+!
+interface GigabitEthernet0/0.3
+ encapsulation dot1Q 30
+ ip address 172.16.64.1 255.255.224.0
+!
+interface GigabitEthernet0/0.4
+ encapsulation dot1Q 40
+ ip address 172.16.96.1 255.255.224.0
+!
+interface GigabitEthernet0/0.5
+ encapsulation dot1Q 50
+ ip address 172.16.128.1 255.255.224.0
+!
+interface GigabitEthernet0/1
+ ip address 10.50.0.3 255.255.255.248
+ ip nat outside
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+ no ip address
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip nat inside source list 2 interface GigabitEthernet0/1 overload
+ip classless
+ip route 10.0.0.0 255.0.0.0 192.168.1.1 
+!
+ip flow-export version 9
+!
+!
+access-list 2 permit 172.16.0.0 0.0.255.255
+access-list 2 permit 10.0.0.0 0.0.0.255
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
