@@ -17,7 +17,9 @@
   [Matériel](#-matériel-et-logiciels) •
   [Installation](#-installation-et-configuration) •
   [Phases du Projet](#-déroulement-du-projet) •
-  [Auteurs](#-auteurs)
+  [Projet Final](#projet-final) •
+  [Bilan](#-conclusion) •
+  [Auteurs](#-auteurs) •
 
 </div>
 
@@ -116,7 +118,7 @@ Communication vocale bidirectionnelle entre deux binômes.
 
 ---
 
-## 🎥 Projet Final : Transmission Vidéo (Streaming)
+## 🎥 <a name="projet-final"></a>🎥 Projet Final : Transmission Vidéo (Streaming)
 L'objectif ultime : transmettre un flux vidéo MP4 d'un PC à un autre par ondes radio.
 
 ### Architecture du Système
@@ -149,7 +151,7 @@ Ce projet a permis de valider des compétences clés en télécommunications :
 
 ---
 
-## 👥 Auteurs et Contexte
+## 👥 Auteurs
 
 * **Auteurs :** Pierre Famchon & Michel Bauchart
 * **Formation :** BUT R&T - IUT de Béthune
