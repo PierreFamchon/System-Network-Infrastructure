@@ -1,10 +1,27 @@
-# 📡 SAE 3.02 - Développer des applications communicantes
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-2.x-lightgrey?style=for-the-badge&logo=flask&logoColor=black)
-![CSS3](https://img.shields.io/badge/CSS3-Style-orange?style=for-the-badge&logo=css3&logoColor=white)
+  <img src="https://cdn-icons-png.flaticon.com/512/751/751463.png" alt="Logo Search App" width="120" height="120">
 
-## 🔎 Application de Recherche Multi-Formats par Mot-Clé
+  # SAE 3.02 - Développer des applications communicantes
+  
+  **Application de Recherche Multi-Formats par Mot-Clé**
+
+  ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)
+  ![Flask](https://img.shields.io/badge/Flask-2.x-lightgrey?style=for-the-badge&logo=flask&logoColor=black)
+  ![CSS3](https://img.shields.io/badge/CSS3-Style-orange?style=for-the-badge&logo=css3&logoColor=white)
+  ![IUT](https://img.shields.io/badge/School-IUT%20R%26T-red?style=for-the-badge)
+
+  <br>
+
+  [Description](#-description-du-projet) •
+  [Fonctionnalités](#-fonctionnalités-clés) •
+  [Stack Technique](#-technologies-utilisées) •
+  [Structure](#-structure-du-dépôt) •
+  [Installation](#-installation-et-démarrage)
+
+</div>
+
+---
 
 ## 📝 Description du Projet
 
@@ -16,23 +33,32 @@ L'objectif principal est de développer une application web légère basée sur 
 
 ## ✨ Fonctionnalités Clés
 
-* **🎨 Interface Web Intuitive :** Formulaire de recherche épuré et résultats lisibles, stylisés avec une charte graphique cohérente (couleur principale : orange `#FF7F00`).
-* **📂 Recherche Multi-Format :** Support natif pour :
-    * 📄 Fichiers texte (`.txt`)
-    * 📕 Documents PDF (`.pdf`)
-    * 🌐 Fichiers HTML (`.html`)
-    * 📊 Fichiers Excel (`.xlsx`)
-* **⚙️ Recherche Avancée :**
+* **🎨 Interface Web Intuitive**
+    * Formulaire de recherche épuré et résultats lisibles.
+    * Stylisé avec une charte graphique cohérente (couleur principale : orange `#FF7F00`).
+
+* **📂 Recherche Multi-Format**
+    * Support natif pour :
+        * 📄 Fichiers texte (`.txt`)
+        * 📕 Documents PDF (`.pdf`)
+        * 🌐 Fichiers HTML (`.html`)
+        * 📊 Fichiers Excel (`.xlsx`)
+
+* **⚙️ Recherche Avancée**
     * Recherche textuelle standard (insensible à la casse).
     * Support des **Expressions Régulières (RegEx)** pour des requêtes complexes.
-* **👁️ Résultats Contextualisés :** Affichage précis incluant :
-    * Le nom du fichier.
-    * La localisation (numéro de ligne, page ou cellule).
-    * L'extrait du texte contenant le mot-clé.
+
+* **👁️ Résultats Contextualisés**
+    * Affichage précis incluant :
+        * Le nom du fichier.
+        * La localisation (numéro de ligne, page ou cellule).
+        * L'extrait du texte contenant le mot-clé.
 
 ---
 
 ## 🛠 Technologies Utilisées
+
+Ce projet s'appuie sur une stack Python robuste pour le backend et les standards du web pour le frontend.
 
 | Catégorie | Technologie | Rôle |
 | :--- | :--- | :--- |
@@ -49,7 +75,7 @@ L'objectif principal est de développer une application web légère basée sur 
 
 ## 📂 Structure du Dépôt
 
-Voici l'organisation des fichiers du projet :
+Voici l'organisation détaillée des fichiers du projet :
 
 ```text
 SAE3.02 - Développer des applications communicantes/
