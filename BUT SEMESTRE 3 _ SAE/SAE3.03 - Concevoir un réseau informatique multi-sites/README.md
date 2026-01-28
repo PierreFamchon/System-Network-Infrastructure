@@ -1,54 +1,50 @@
-# Projet SAE 3.03 : Rapport Final & Code Source
+# SAE 3.03 - Conception d'un réseau informatique multi-sites
 
-![Version](https://img.shields.io/badge/Version-1.0-blue)
-![Statut](https://img.shields.io/badge/Statut-Terminé-success)
-![Équipe](https://img.shields.io/badge/Équipe-4%20Personnes-orange)
+Ce projet porte sur la conception et la mise en œuvre d'une architecture réseau complète pour une entreprise disposant d'un **Siège** et d'une **Succursale**, avec une extension potentielle vers un site **Pépinière**. Il intègre à la fois le déploiement de l'infrastructure réseau (routage, VLANs, VPN) et la configuration des services applicatifs associés.
 
-Ce dépôt héberge l'ensemble des livrables (code source et documentation) réalisés dans le cadre du module **SAE 3.03**. Le projet porte sur l'analyse, la conception et le développement d'une solution technique répondant aux exigences du cahier des charges défini au Semestre 3.
+## 📋 Table des Matières
 
-## 👥 Auteurs du projet
+1. [Description du Projet](#description-du-projet)
+2. [Structure du Dépôt](#structure-du-dépôt)
+3. [Architecture Réseau](#architecture-réseau)
+4. [Installation et Configuration des Services](#installation-et-configuration-des-services)
+    - [Services Web et Base de Données](#services-web-et-base-de-données)
+    - [Active Directory et DNS](#active-directory-et-dns)
+    - [Service Mail (Postfix)](#service-mail-postfix)
+    - [Proxy et Sécurité](#proxy-et-sécurité)
+    - [Streaming Vidéo](#streaming-vidéo)
+5. [Auteurs](#auteurs)
 
-Travail réalisé par l'équipe de développement :
+## 📖 Description du Projet
 
-* **Pierre Famchon**
-* **Michel Bauchart**
-* **Baptiste Duval**
-* **Nicolas Edouard**
+L'objectif est de déployer un réseau d'entreprise robuste et sécurisé interconnectant plusieurs sites géographiques.
 
-## 📄 Contenu du Rapport
+**Points clés :**
+* **Réseau :** Routage OSPF, segmentation par VLANs (10 à 50), redondance via HSRP, et interconnexion de sites via Tunnels (GRE/IPSec).
+* **Services :** Hébergement Web (Flask/MySQL), Annuaire centralisé (AD), Messagerie, Proxy web et Streaming vidéo.
+* **Équipements :** Routeurs et commutateurs de couche 3 (Cisco), Serveurs Linux (Ubuntu/Debian) et Windows Server.
 
-Le rapport complet (`SAE 3.03.pdf`) est disponible à la racine ou dans le dossier `/docs`. Il détaille la méthodologie et les choix techniques sur **46 pages**, structurées comme suit :
+## 📂 Structure du Dépôt
 
-| Section | Titre indicatif du chapitre | Page |
-| :--- | :--- | :--- |
-| **1** | Introduction et Contexte du projet | 1 |
-| **2** | Analyse des besoins et Spécifications | 8 |
-| **3** | Conception technique et Architecture | 22 |
-| **4** | Réalisation et Implémentation | 37 |
-| **5** | Conclusion et Perspectives | 46 |
+L'arborescence du projet est organisée comme suit :
 
-## 🛠️ Installation et Utilisation
-
-Pour tester le projet localement sur votre machine :
-
-1.  **Cloner le dépôt :**
-    ```bash
-    git clone [https://github.com/votre-compte/sae-303.git](https://github.com/votre-compte/sae-303.git)
-    ```
-
-2.  **Configuration :**
-    * Assurez-vous d'avoir l'environnement de développement adéquat installé.
-    * Consultez le dossier `/src` pour les fichiers sources.
-
-3.  **Lancement :**
-    * Exécutez le script principal ou compilez le projet selon les standards habituels.
-
-## 🎯 Objectifs pédagogiques
-
-Ce projet a permis de valider les compétences suivantes :
-* Conception et modélisation d'une application informatique.
-* Optimisation des structures de données et algorithmes.
-* Travail collaboratif et gestion de la documentation technique.
-
----
-*Projet réalisé dans le cadre du Bachelor Universitaire de Technologie (BUT).*
+```text
+.
+├── Documentation/
+│   ├── NAT.docx                    # Documentation sur la configuration NAT
+│   ├── Tunnel GRE.docx             # Mise en place du tunnel inter-sites
+│   ├── Windows-server 1.docx       # Installation et config Active Directory
+│   ├── lancer le serveur video.docx # Procédure pour le streaming
+│   ├── packet de tracer.docx       # Notes sur la simulation
+│   ├── routeur.docx                # Configs spécifiques aux routeurs
+│   ├── switch.docx                 # Configs spécifiques aux switchs
+│   └── utile.docx                  # Commandes et mémos divers
+├── Fichier de config/
+│   ├── Réseau/                     # Configurations brutes (Cisco IOS)
+│   └── Services/                   # Scripts de services (Web, DB, etc.)
+├── README.md                       # Ce fichier
+├── Rapport final.docx              # Rapport de projet (format Word)
+├── Rapport final.pdf               # Rapport de projet (format PDF)
+├── Schéma.drawio                   # Schéma éditable (Draw.io)
+├── Schéma.jpg                      # Image de la topologie réseau
+└── SchémaPackettracer.pkt          # Fichier de simulation Cisco Packet Tracer
