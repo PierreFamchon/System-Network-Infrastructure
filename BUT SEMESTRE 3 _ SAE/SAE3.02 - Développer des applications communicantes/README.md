@@ -85,8 +85,9 @@ Assurez-vous d'avoir [Python 3](https://www.python.org/downloads/) installé sur
 #### 2. Cloner le Dépôt
 Récupérez le code source via Git :
 
+git clone [https://github.com/PierreFamchon/portfolio-rt.git](https://github.com/PierreFamchon/portfolio-rt.git)
 ```bash
-git clone 
+git clone  [https://github.com/PierreFamchon/RT2-Projets/BUT_SEMESTRE_3_SAE/SAE3.02_-_](https://github.com/PierreFamchon/portfolio-rt.git)
 cd <NOM_DU_DOSSIER>
 ```
 
