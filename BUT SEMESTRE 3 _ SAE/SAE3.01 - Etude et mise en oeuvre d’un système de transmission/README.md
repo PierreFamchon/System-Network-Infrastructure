@@ -19,7 +19,7 @@
   [Phases du Projet](#-déroulement-du-projet) •
   [Projet Final](#projet-final) •
   [Bilan](#-conclusion) •
-  [Auteurs](#-auteurs) •
+  [Auteurs](#-auteurs) 
 
 </div>
 
@@ -118,7 +118,7 @@ Communication vocale bidirectionnelle entre deux binômes.
 
 ---
 
-## 🎥 <a name="projet-final"></a>🎥 Projet Final : Transmission Vidéo (Streaming)
+## 🎥 <a name="projet-final"></a>Projet Final : Transmission Vidéo (Streaming)
 L'objectif ultime : transmettre un flux vidéo MP4 d'un PC à un autre par ondes radio.
 
 ### Architecture du Système
