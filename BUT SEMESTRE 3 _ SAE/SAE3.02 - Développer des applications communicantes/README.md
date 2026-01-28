@@ -136,3 +136,30 @@ Le terminal devrait afficher que le serveur tourne sur http://127.0.0.1:5000.
 
 Ouvrez votre navigateur web préféré et accédez à l'adresse http://127.0.0.1:5000 pour commencer à rechercher dans vos documents.
 
+---
+
+## 📅 Déroulement du Projet
+Le développement de l'application a suivi une approche incrémentale, séparant la logique métier de l'interface utilisateur.
+
+### Phase 1 : Scripting & Parsing (Backend)
+* Création des scripts Python pour ouvrir et lire les différents formats de fichiers.
+* Intégration des bibliothèques spécifiques (PyPDF2 pour le PDF, openpyxl pour Excel).
+* Mise au point de la logique d'extraction de texte (nettoyage des balises HTML avec BeautifulSoup).
+
+### Phase 2 : Moteur de Recherche (Core Logic)
+* Développement de l'algorithme de parcours de dossiers.
+* Implémentation du module re pour gérer les recherches par Expressions Régulières.
+* Gestion du contexte : récupération des lignes précédant et suivant le mot-clé trouvé pour l'affichage.
+
+### Phase 3 : Interface Web (Flask)
+* Mise en place du serveur Flask et des routes (GET pour l'accueil, POST pour la recherche).
+* Liaison entre le moteur de recherche Python et les vues web.
+* Gestion des erreurs (fichiers illisibles, aucun résultat trouvé).
+
+### Phase 4 : Frontend & UX
+* Création des templates HTML avec Jinja2 pour afficher dynamiquement les résultats.
+* Stylisation CSS (Design Responsive, palette de couleurs IUT).
+
+---
+
+## 🔚 Conclusion
