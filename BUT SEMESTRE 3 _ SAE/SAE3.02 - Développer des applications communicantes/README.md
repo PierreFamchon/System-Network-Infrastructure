@@ -17,8 +17,11 @@
   [Fonctionnalités](#-fonctionnalités-clés) •
   [Stack Technique](#-technologies-utilisées) •
   [Structure](#-structure-du-dépôt) •
-  [Installation](#-installation-et-démarrage)
-
+  [Installation](#-installation-et-démarrage)•
+  [Phases du projet](#-déroulement-du-projet) •
+  [Bilan](#-conclusion) •
+  [Auteurs](#-auteurs) 
+  
 </div>
 
 ---
