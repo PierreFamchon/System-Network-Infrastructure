@@ -1,22 +1,151 @@
-# SAE 3.01 : Étude et Mise en œuvre d'un Système de Transmission SDR
+<div align="center">
 
-![Banner Project](https://via.placeholder.com/1000x200?text=SDR+Project+Adalm+Pluto+GNU+Radio)
-Ce dépôt contient les travaux, schémas GNU Radio et résultats du projet **SAE 3.01** réalisé dans le cadre de la 2ème année de BUT R&T (Réseaux et Télécommunications).
+  <img src="https://cdn-icons-png.flaticon.com/512/3253/3253239.png" alt="Logo SDR Project" width="120" height="120">
 
-Le projet porte sur l'exploration de la **Radio Logicielle (SDR)**, de l'analyse spectrale à la mise en œuvre d'une chaîne complète de transmission vidéo via le module **Adalm Pluto**.
+  # SAE 3.01 : Système de Transmission SDR
+  
+  **Étude, Analyse Spectrale et Transmission Vidéo via Adalm Pluto**
+
+  ![GNU Radio](https://img.shields.io/badge/GNU%20Radio-3.10-orange?style=for-the-badge&logo=gnu-radio&logoColor=white)
+  ![Adalm Pluto](https://img.shields.io/badge/Hardware-Adalm%20Pluto-blue?style=for-the-badge&logo=analogdevices&logoColor=white)
+  ![Signal Processing](https://img.shields.io/badge/Signal-Processing-success?style=for-the-badge)
+  ![VLC](https://img.shields.io/badge/Stream-VLC-E86900?style=for-the-badge&logo=vlc&logoColor=white)
+
+  <br>
+
+  [Description](#-contexte-du-projet) •
+  [Matériel](#-matériel-et-logiciels) •
+  [Installation](#-installation-et-configuration) •
+  [Phases du Projet](#-déroulement-du-projet) •
+  [Auteurs](#-auteurs)
+
+</div>
 
 ---
 
-## 📋 Table des Matières
+## 📖 Contexte du Projet
 
-1. [Auteurs et Contexte](#-auteurs-et-contexte)
-2. [Matériel et Logiciels Utilisés](#-matériel-et-logiciels-utilisés)
-3. [Phase 1 : Prise en main et Analyse Spectrale](#-phase-1--prise-en-main-et-analyse-spectrale)
-4. [Phase 2 : Simulation et Modulation AM sur GNU Radio](#-phase-2--simulation-et-modulation-am-sur-gnu-radio)
-5. [Phase 3 : Réception FM et RDS](#-phase-3--réception-fm-et-rds)
-6. [Phase 4 : Émission/Réception Audio (Duplex)](#-phase-4--émissionréception-audio-duplex)
-7. [Projet Final : Transmission Vidéo (Streaming)](#-projet-final--transmission-vidéo-streaming)
-8. [Conclusion](#-conclusion)
+Ce dépôt regroupe les travaux, schémas GNU Radio (`.grc`) et résultats du projet **SAE 3.01** réalisé dans le cadre de la 2ème année de BUT R&T (Réseaux et Télécommunications).
+
+Le projet porte sur l'exploration approfondie de la **Radio Logicielle (SDR)**. Il débute par l'analyse spectrale de l'environnement, passe par la simulation de modulations analogiques, et aboutit à la mise en œuvre d'une **chaîne complète de transmission vidéo** via le module **Adalm Pluto**.
+
+---
+
+## 🛠 Matériel et Logiciels
+
+### 🧰 Équipement Hardware
+| Équipement | Modèle | Caractéristiques |
+| :--- | :--- | :--- |
+| **SDR** | [Analog Devices ADALM-PLUTO](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html) | RX/TX : 325 MHz - 3.8 GHz |
+| **Analyseur** | Spectran HF-6065 V4 | Analyse spectrale portative |
+| **Antenne** | HyperLOG 7060 | Directionnelle Log-périodique (700 MHz - 6 GHz) |
+
+### 💻 Environnement Software
+* **GNU Radio Companion :** Conception des diagrammes de flux et traitement du signal.
+* **MCS Spectrum Analyzer :** Interface de contrôle pour le Spectran V4.
+* **VLC Media Player :** Streaming vidéo via protocole UDP.
+* **Pilotes :** PlutoSDR-M2k-USB-Drivers.
+
+---
+
+## 🚀 Installation et Configuration
+
+Pour reproduire ces expérimentations, suivez les étapes d'installation ci-dessous.
+
+### 1. Prérequis Système
+* Un PC sous **Linux (Ubuntu recommandé)** ou **Windows 10/11**.
+* Ports USB 2.0 ou 3.0 disponibles.
+
+### 2. Installation des Pilotes Adalm Pluto
+Téléchargez et installez les pilotes nécessaires pour la reconnaissance du périphérique USB :
+* [Télécharger les drivers PlutoSDR](https://wiki.analog.com/university/tools/pluto/drivers/windows)
+
+### 3. Installation de GNU Radio
+L'environnement principal de développement est GNU Radio.
+* **Windows :** Utilisez l'installateur [Radioconda](https://github.com/ryanvolz/radioconda).
+* **Linux :**
+  ```bash
+  sudo apt-get update
+  sudo apt-get install gnuradio
+   ```
+### 4. Récupération du Projet
+Clonez ce dépôt pour accéder aux fichiers .grc (GNU Radio Companion) :
+
+  ```bash
+git clone [https://github.com/PierreFamchon/RT2-Projets.git](https://github.com/PierreFamchon/RT2-Projets.git)
+cd BUT SEMESTRE 3_SAE
+cd SAE3.01 - Etude et mise en oeuvre d’un système de transmission
+   ```
+### 5. Connexion 
+Connectez l'Adalm Pluto en USB. Vérifiez qu'il est reconnu comme un périphérique réseau (généralement 192.168.2.1).
+
+---
+
+## 📡 Déroulement du Projet
+
+### Phase 1 : Prise en main et Analyse Spectrale
+Avant toute transmission, une analyse de l'environnement radiofréquence a été réalisée avec le Spectran V4 et le logiciel MCS
+
+* GSM 900 / 1800 : Identification des opérateurs (ex: Vodafone ~ -36 dBm).
+* LTE (2.1 GHz) : Visualisation des bandes 4G.
+* WiFi (2.4 & 5 GHz) : Observation des canaux 802.11.
+
+Note : Les fichiers .mdr sont disponibles dans le dossier /measurements.
+
+### Phase 2 : Simulation et Modulation AM
+Découverte de GNU Radio via la création de signaux et l'analyse FFT.
+
+* Échantillonnage : Étude de la relation samp_rate / freq_var.
+* Résolution Fréquentielle : Delta f = samp_rate / FFT_Size
+  * Exemple : Pour 32768 points à 32kHz → Delta f ≈ 0.97 Hz.
+* Modulation AM : Multiplication Porteuse $\times$ Modulant et observation des bandes latérales.
+
+### Phase 3 : Réception FM et RDS
+Mise en œuvre d'un récepteur FM (88-108 MHz) via l'Adalm Pluto.
+
+* Cible : Skyrock (106.93 MHz).
+* Architecture : Source Pluto → Filtre Passe-Bas → Démod WBFM → Audio Sink.
+* RDS : Utilisation de gr-rds pour l'extraction des métadonnées (Nom station, Traffic).
+
+### Phase 4 : Émission/Réception Audio (Duplex)
+Communication vocale bidirectionnelle entre deux binômes.
+
+*  Technique : Modulation FM de la voix (48kHz) sur porteuse 2.4 GHz.
+*  Flux : Remplacement des blocs UDP par PlutoSDR Sink/Source.
+*  Résultat : Full Duplex fonctionnel vérifié par analyseur de spectre.
+
+---
+
+## 🎥 Projet Final : Transmission Vidéo (Streaming)
+L'objectif ultime : transmettre un flux vidéo MP4 d'un PC à un autre par ondes radio.
+
+### Architecture du Système
+
+* Émission (PC A + Pluto A)
+     * VLC : Lecture MP4 → Stream vers UDP :5679.
+     * GNU Radio : UDP Source → Modulation GMSK/FM → Pluto Sink (2.4 GHz).
+
+* Transmission
+     * Signal RF à 2.4 GHz via antennes.
+
+* Réception (Pluto B + PC B)
+     * GNU Radio : Pluto Source → Démodulation → UDP Sink (IP Cible:5680).
+     * VLC : Lecture flux réseau udp://@:5680.
+
+### Résultats Obtenus
+* ✅ Vidéo transmise (Codec H.265 + Audio MP3).
+* ✅ Fluidité correcte et faible latence.
+* ✅ Validation de la capacité de débit du PlutoSDR.
+
+---
+
+## 🔚 Conclusion
+Ce projet a permis de valider des compétences clés en télécommunications :
+
+* 🔧 Hardware : Calibration SDR et manipulation d'antennes.
+* 📶 Signal : Traitement numérique (DSP) avec GNU Radio.
+* 🔄 Protocoles : Compréhension des chaînes de transmission (UDP, Modulation).
+* 🐞 Debug : Résolution de problèmes sur une chaîne complexe.
 
 ---
 
@@ -26,109 +155,3 @@ Le projet porte sur l'exploration de la **Radio Logicielle (SDR)**, de l'analyse
 * **Formation :** BUT R&T - IUT de Béthune
 * **Année :** 2024-2025
 * **Objectif :** Comprendre les concepts de la transmission numérique/analogique et maîtriser la chaîne de traitement SDR.
-
----
-
-## 🛠 Matériel et Logiciels Utilisés
-
-### Matériel
-* **SDR :** [Analog Devices ADALM-PLUTO](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html) (325 MHz - 3.8 GHz).
-* **Analyseur de Spectre :** Spectran HF-6065 V4.
-* **Antenne :** HyperLOG 7060 (Directionnelle Log-périodique, 700 MHz - 6 GHz).
-
-### Logiciels
-* **GNU Radio Companion :** Pour la création des diagrammes de flux de traitement du signal.
-* **MCS Spectrum Analyzer :** Pour l'interface avec le Spectran V4.
-* **VLC Media Player :** Pour le streaming vidéo via UDP.
-* **Pilotes :** PlutoSDR-M2k-USB-Drivers.
-
----
-
-## 📡 Phase 1 : Prise en main et Analyse Spectrale
-
-Avant de transmettre, nous avons analysé l'environnement radiofréquence à l'aide du **Spectran V4** et du logiciel **MCS**.
-
-**Analyses réalisées :**
-* **GSM 900 / 1800 :** Identification des opérateurs (Vodafone, Telekom, O2, E-Plus) et mesure des puissances (ex: Vodafone ~ -36 dBm).
-* **LTE (2.1 GHz) :** Visualisation des bandes de fréquences 4G.
-* **WiFi (2.4 GHz & 5 GHz) :** Observation des canaux 802.11b/g/n.
-
-*Note : Les fichiers de mesures `.mdr` sont disponibles dans le dossier `/measurements` (si vous les uploadez).*
-
----
-
-## 🎛 Phase 2 : Simulation et Modulation AM sur GNU Radio
-
-Découverte de l'environnement GNU Radio via la création de signaux et l'analyse de la transformée de Fourier (FFT).
-
-### Concepts Clés
-* **Échantillonnage :** Relation entre `samp_rate` et `freq_var`.
-* **Résolution Fréquentielle :** Vérification de la formule $\Delta f = \frac{samp\_rate}{FFT\_Size}$.
-    * *Exemple :* Pour une FFT de 32768 points à 32kHz, $\Delta f \approx 0.97 Hz$.
-* **Modulation AM :** Multiplication de deux signaux cosinus (porteuse et modulant) et observation des bandes latérales.
-
-`![Flowgraph AM](path/to/am_flowgraph.png)`
-
----
-
-## 📻 Phase 3 : Réception FM et RDS
-
-Mise en œuvre d'un récepteur FM analogique commercial (88-108 MHz) avec l'Adalm Pluto.
-
-* **Station testée :** Skyrock (106.93 MHz).
-* **Architecture :** Source Pluto -> Filtre Passe-Bas -> Démodulation FM -> Sortie Audio.
-* **Décodage RDS :** Tentative d'utilisation de la librairie `gr-rds` pour extraire les informations numériques (Nom de la station, Traffic Info).
-    * *Défis :* Installation complexe de la librairie et réception du signal RDS parfois difficile selon le placement de l'antenne.
-
----
-
-## 🎙 Phase 4 : Émission/Réception Audio (Duplex)
-
-Réalisation d'un système de communication vocale entre deux binômes équipés de PlutoSDR.
-
-1.  **Simplex :** Un émetteur et un récepteur.
-2.  **Full Duplex :** Communication bidirectionnelle simultanée.
-
-**Configuration technique :**
-* Utilisation de blocs `UDP Sink/Source` remplacés par `PlutoSDR Sink/Source`.
-* Modulation FM de la voix (48kHz) sur une porteuse à 2.4 GHz.
-* **Résultat :** Communication fonctionnelle, synchronisation du signal observée sur l'analyseur de spectre (FFT).
-
----
-
-## 🎥 Projet Final : Transmission Vidéo (Streaming)
-
-L'objectif final était de transmettre un flux vidéo MP4 d'un PC à un autre en passant par les ondes via les modules SDR.
-
-### Architecture du Système
-
-1.  **Émission (PC 1 + Pluto A) :**
-    * **VLC :** Lecture du fichier MP4 -> Streaming vers UDP (Port 5679).
-    * **GNU Radio :** `UDP Source` (Port 5679) -> Modulation -> `PlutoSDR Sink` (Porteuse 2.4 GHz).
-
-2.  **Transmission :** Signal radio à 2.4 GHz.
-
-3.  **Réception (Pluto B + PC 2) :**
-    * **GNU Radio :** `PlutoSDR Source` -> Démodulation -> `UDP Sink` (vers IP cible, Port 5680).
-    * **VLC :** Lecture du flux réseau `udp://@:5680`.
-
-### Résultats
-* Vidéo transmise avec succès (Codec H.265 + MP3).
-* Qualité fluide, pas d'interférences majeures notées lors du test final.
-* Démonstration de la capacité du PlutoSDR à gérer des flux de données continus.
-
-`![Transmission Vidéo VLC](path/to/vlc_result.png)`
-
----
-
-## 🔚 Conclusion
-
-Ce projet a permis de valider les compétences suivantes :
-* Configuration et calibration de matériel RF (SDR et Antennes).
-* Traitement du signal numérique avec GNU Radio.
-* Compréhension des protocoles de transmission (UDP, Modulation Analogique/Numérique).
-* Débogage de chaînes de transmission complexes.
-
----
-
-*Ce projet a été réalisé avec les ressources de l'IUT de Béthune.*
