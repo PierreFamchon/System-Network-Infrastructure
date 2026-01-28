@@ -6,7 +6,7 @@
 
 ## 🔎 Application de Recherche Multi-Formats par Mot-Clé
 
-### 📝 Description du Projet
+## 📝 Description du Projet
 
 Ce projet a été réalisé dans le cadre de la **SAE 3.02 "Développer des applications communicantes"** de l'IUT R&T.
 
@@ -14,7 +14,7 @@ L'objectif principal est de développer une application web légère basée sur 
 
 ---
 
-### ✨ Fonctionnalités Clés
+## ✨ Fonctionnalités Clés
 
 * **🎨 Interface Web Intuitive :** Formulaire de recherche épuré et résultats lisibles, stylisés avec une charte graphique cohérente (couleur principale : orange `#FF7F00`).
 * **📂 Recherche Multi-Format :** Support natif pour :
@@ -32,7 +32,7 @@ L'objectif principal est de développer une application web légère basée sur 
 
 ---
 
-### 🛠 Technologies Utilisées
+## 🛠 Technologies Utilisées
 
 | Catégorie | Technologie | Rôle |
 | :--- | :--- | :--- |
@@ -47,7 +47,7 @@ L'objectif principal est de développer une application web légère basée sur 
 
 ---
 
-### 📂 Structure du Dépôt
+## 📂 Structure du Dépôt
 
 Voici l'organisation des fichiers du projet :
 
@@ -75,14 +75,14 @@ SAE3.02 - Développer des applications communicantes/
 ```
 ---
 
-### 🚀 Installation et Démarrage
+## 🚀 Installation et Démarrage
 
 Suivez ces étapes pour lancer l'application sur votre machine.
 
-#### 1. Prérequis
+### 1. Prérequis
 Assurez-vous d'avoir [Python 3](https://www.python.org/downloads/) installé sur votre système.
 
-#### 2. Cloner le Dépôt
+### 2. Cloner le Dépôt
 Récupérez le code source via Git :
 
 ```bash
@@ -92,13 +92,13 @@ cd "BUT SEMESTRE 3 _ SAE"
 cd "SAE3.02 - Développer des applications..."
 ```
 
-#### 3. Installer les Dépendances
+### 3. Installer les Dépendances
 Installez les bibliothèques nécessaires listées dans `requirements.txt` :
 
 ```bash
 pip install -r requirements.txt
 ```
-#### 4. Exécuter l'Application
+### 4. Exécuter l'Application
 Lancez le serveur Flask :
 
 ```bash
@@ -106,7 +106,7 @@ python app.py
 ```
 Le terminal devrait afficher que le serveur tourne sur http://127.0.0.1:5000.
 
-#### 5. Utilisation
+### 5. Utilisation
 
 Ouvrez votre navigateur web préféré et accédez à l'adresse http://127.0.0.1:5000 pour commencer à rechercher dans vos documents.
 
