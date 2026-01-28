@@ -15,7 +15,7 @@
   [Description](#-description-du-projet) •
   [Stack Technique](#-stack-technique) •
   [Structure](#-structure-du-dépôt) •
-  [Installation](#-installation) •
+  [Installation](#installation) •
   [Auteurs](#-auteurs)
 
 </div>
@@ -98,7 +98,7 @@ Voici l'organisation détaillée des fichiers du projet :
 ```
 ---
 
-## ⚙️ Installation
+## ⚙️ <a name="installation"></a>Installation et Configuration
 ### 🐳 Services Web (Docker)
 L'application Web et la base de données sont conteneurisées.
 
