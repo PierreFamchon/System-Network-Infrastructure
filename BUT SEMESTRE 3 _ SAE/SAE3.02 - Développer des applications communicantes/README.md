@@ -163,3 +163,23 @@ Le développement de l'application a suivi une approche incrémentale, séparant
 ---
 
 ## 🔚 Conclusion
+Cette SAE 3.02 a permis de mettre en pratique les compétences de programmation dans un contexte web moderne.
+
+### Acquis principaux :
+
+* ✅ Maîtrise du framework Flask et du pattern MVC (Modèle-Vue-Contrôleur).
+* ✅ Manipulation avancée de fichiers et de structures de données en Python.
+* ✅ Compréhension et utilisation des Expressions Régulières pour le traitement de texte.
+* ✅ Création d'une interface utilisateur fonctionnelle et esthétique.
+
+---
+
+## 👥 Auteurs
+Projet réalisé par l'équipe :
+
+| Nom | Rôle |
+| :--- | :--- |
+| **Pierre Famchon** | Lead Network / Config Cisco |
+| **Michel Bauchart** | Services Windows / AD |
+| **Baptiste Duval** | Services Linux / Web |
+| **Nicolas Edouard** | Documentation / Tests |
