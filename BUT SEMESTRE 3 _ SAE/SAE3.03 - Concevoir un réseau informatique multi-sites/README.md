@@ -16,6 +16,8 @@
   [Stack Technique](#-stack-technique) •
   [Structure](#-structure-du-dépôt) •
   [Installation](#installation) •
+  [Phase du Projet](#-déroulement-du-projet) •
+  [Bilan](#-conclusion) •
   [Auteurs](#-auteurs)
 
 </div>
@@ -136,6 +138,47 @@ Modification de la politique de sécurité dans /etc/squid/squid.conf :
 # Autoriser le trafic (par défaut deny)
 http_access allow all
 ```
+---
+
+## 📅 Déroulement du Projet
+Le projet a été mené en plusieurs phases successives, de l'infrastructure physique aux services applicatifs.
+
+### Phase 1 : Architecture & Adressage
+* Définition du plan d'adressage IP (VLSM) pour optimiser les sous-réseaux.
+* Segmentation logique par VLANs (10 à 50) pour séparer les flux (Admin, Prod, VoIP, etc.).
+
+### Phase 2 : Commutation & Redondance (LAN)
+* Configuration des switches de couche 3 au Siège.
+* Mise en place du HSRP (Hot Standby Router Protocol) :
+  * Switch 1 : Active (Priorité 105)
+  * Switch 2 : Standby (Priorité 95)
+  * Objectif : Assurer une passerelle virtuelle résiliente pour les utilisateurs.
+
+### Phase 3 : Routage & WAN
+* Configuration du protocole OSPF (Area 0) pour le routage dynamique interne.
+* Mise en place du NAT/PAT pour l'accès Internet via le routeur de bordure.
+* Création d'un Tunnel GRE (encapsulé ou non dans IPSec) pour relier le LAN du Siège à celui de la Succursale de manière transparente.
+
+### Phase 4 : Déploiement des Services
+Une fois le réseau stable, les services ont été installés sur des serveurs (VMs et Docker) :
+
+* Infrastructure : Contrôleur de domaine (AD DS), DNS, DHCP.
+* Web : Déploiement de l'application Flask via docker-compose.
+* Proxy : Configuration des ACLs Squid pour filtrer le web.
+* Multimédia : Tests de streaming vidéo UDP multicast/unicast.
+
+---
+
+## 🔚 Conclusion
+🔚 Conclusion
+Ce projet SAE 3.03 nous a permis de consolider nos compétences d'administrateurs réseaux et systèmes. Nous avons réussi à :
+
+* ✅ Interconnecter des sites distants via des technologies WAN standards.
+* ✅ Sécuriser l'accès et la disponibilité du réseau (HSRP, VLANs).
+* ✅ Intégrer des services hétérogènes (Linux/Windows/Cisco) dans un environnement unifié.
+
+Les défis principaux ont résidé dans la cohérence du routage inter-VLANs et la configuration fine du Tunnel GRE à travers le NAT.
+
 ---
 
 ## 👥 Auteurs
