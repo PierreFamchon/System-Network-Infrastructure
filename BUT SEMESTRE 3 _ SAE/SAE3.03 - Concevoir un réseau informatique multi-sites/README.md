@@ -1,50 +1,149 @@
-# SAE 3.03 - Conception d'un réseau informatique multi-sites
+<div align="center">
 
-Ce projet porte sur la conception et la mise en œuvre d'une architecture réseau complète pour une entreprise disposant d'un **Siège** et d'une **Succursale**, avec une extension potentielle vers un site **Pépinière**. Il intègre à la fois le déploiement de l'infrastructure réseau (routage, VLANs, VPN) et la configuration des services applicatifs associés.
+  <img src="https://cdn-icons-png.flaticon.com/512/2620/2620563.png" alt="Logo Projet" width="120" height="120">
 
-## 📋 Table des Matières
+  # SAE 3.03 - Architecture Réseau Multi-Sites
+  
+  **Conception, déploiement et administration d'un réseau d'entreprise interconnecté.**
 
-1. [Description du Projet](#description-du-projet)
-2. [Structure du Dépôt](#structure-du-dépôt)
-3. [Architecture Réseau](#architecture-réseau)
-4. [Installation et Configuration des Services](#installation-et-configuration-des-services)
-    - [Services Web et Base de Données](#services-web-et-base-de-données)
-    - [Active Directory et DNS](#active-directory-et-dns)
-    - [Service Mail (Postfix)](#service-mail-postfix)
-    - [Proxy et Sécurité](#proxy-et-sécurité)
-    - [Streaming Vidéo](#streaming-vidéo)
-5. [Auteurs](#auteurs)
+  ![Status](https://img.shields.io/badge/Status-Termin%C3%A9-success?style=for-the-badge)
+  ![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)
+  ![School](https://img.shields.io/badge/%C3%89cole-IUT-orange?style=for-the-badge)
+
+  <br>
+
+  [Description](#-description-du-projet) •
+  [Stack Technique](#-stack-technique) •
+  [Structure](#-structure-du-dépôt) •
+  [Installation](#-installation) •
+  [Auteurs](#-auteurs)
+
+</div>
+
+---
 
 ## 📖 Description du Projet
 
-L'objectif est de déployer un réseau d'entreprise robuste et sécurisé interconnectant plusieurs sites géographiques.
+Ce projet vise à concevoir une infrastructure réseau complète pour une entreprise disposant d'un **Siège** et d'une **Succursale**, avec une extension vers une **Pépinière**. Il couvre les couches réseaux (L2/L3) ainsi que la couche applicative (Services).
 
-**Points clés :**
-* **Réseau :** Routage OSPF, segmentation par VLANs (10 à 50), redondance via HSRP, et interconnexion de sites via Tunnels (GRE/IPSec).
-* **Services :** Hébergement Web (Flask/MySQL), Annuaire centralisé (AD), Messagerie, Proxy web et Streaming vidéo.
-* **Équipements :** Routeurs et commutateurs de couche 3 (Cisco), Serveurs Linux (Ubuntu/Debian) et Windows Server.
+**Objectifs principaux :**
+* 🌐 **Interconnexion** sécurisée des sites (VPN/Tunneling).
+* 🛡️ **Sécurité** et segmentation (VLANs, ACL, Proxy).
+* 🔄 **Haute Disponibilité** de la passerelle (HSRP).
+* 💻 **Services** d'entreprise (AD, Web, Mail, Streaming).
+
+---
+
+## 🛠 Stack Technique
+
+### Infrastructure & Réseau
+![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
+![OSPF](https://img.shields.io/badge/Routing-OSPF-critical?style=for-the-badge)
+![HSRP](https://img.shields.io/badge/Redundancy-HSRP-critical?style=for-the-badge)
+![VLAN](https://img.shields.io/badge/Switching-VLAN-blueviolet?style=for-the-badge)
+![VPN](https://img.shields.io/badge/Tunneling-GRE%20%2F%20IPSec-important?style=for-the-badge)
+
+### Système & Services
+![Windows Server](https://img.shields.io/badge/Windows%20Server-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Active Directory](https://img.shields.io/badge/Active%20Directory-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![Postfix](https://img.shields.io/badge/Mail-Postfix-orange?style=for-the-badge)
+![Squid](https://img.shields.io/badge/Proxy-Squid-green?style=for-the-badge)
+
+### Application Web & Données
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+---
 
 ## 📂 Structure du Dépôt
 
-L'arborescence du projet est organisée comme suit :
+Voici l'organisation détaillée des fichiers du projet :
 
 ```text
 .
-├── Documentation/
-│   ├── NAT.docx                    # Documentation sur la configuration NAT
-│   ├── Tunnel GRE.docx             # Mise en place du tunnel inter-sites
-│   ├── Windows-server 1.docx       # Installation et config Active Directory
-│   ├── lancer le serveur video.docx # Procédure pour le streaming
-│   ├── packet de tracer.docx       # Notes sur la simulation
-│   ├── routeur.docx                # Configs spécifiques aux routeurs
-│   ├── switch.docx                 # Configs spécifiques aux switchs
-│   └── utile.docx                  # Commandes et mémos divers
-├── Fichier de config/
-│   ├── Réseau/                     # Configurations brutes (Cisco IOS)
-│   └── Services/                   # Scripts de services (Web, DB, etc.)
-├── README.md                       # Ce fichier
-├── Rapport final.docx              # Rapport de projet (format Word)
-├── Rapport final.pdf               # Rapport de projet (format PDF)
-├── Schéma.drawio                   # Schéma éditable (Draw.io)
-├── Schéma.jpg                      # Image de la topologie réseau
-└── SchémaPackettracer.pkt          # Fichier de simulation Cisco Packet Tracer
+├── 📁 Documentation/
+│   ├── 📄 NAT.docx                    # Configuration du NAT
+│   ├── 📄 Tunnel GRE.docx             # Mise en place du tunnel inter-sites
+│   ├── 📄 Windows-server 1.docx       # Installation Active Directory & DNS
+│   ├── 📄 lancer le serveur video.docx # Procédure Streaming
+│   ├── 📄 packet de tracer.docx       # Notes sur la simulation
+│   ├── 📄 routeur.docx                # Configs spécifiques routeurs
+│   ├── 📄 switch.docx                 # Configs spécifiques switches
+│   └── 📄 utile.docx                  # Mémos commandes Cisco/Linux
+│
+├── 📁 Fichier de config/
+│   ├── 📂 Réseau/
+│   │   ├── 📄 routeur_pepiniaire.txt     # Config Routeur Pépinière
+│   │   ├── 📄 routeur_siege.txt          # Config Routeur Siège (NAT, GRE)
+│   │   ├── 📄 routeur_succursale.txt     # Config Routeur Succursale
+│   │   ├── 📄 switch_couche3_1_siège.txt # Switch L3 Principal (HSRP 105)
+│   │   └── 📄 switch_couche3_2_siège.txt # Switch L3 Secours (HSRP 95)
+│   │
+│   └── 📂 Services/
+│       ├── 📂 Mail/                      # Config Postfix
+│       ├── 📂 Proxy/                     # Config Squid
+│       ├── 📂 Vidéo/                     # Scripts ffmpeg
+│       ├── 📂 Web/                       # App Flask + Dockerfile
+│       └── 📂 Wifi/                      # Config Contrôleur
+│
+├── 📄 Rapport final.docx              # Rapport complet (Word)
+├── 📄 Rapport final.pdf               # Rapport complet (PDF)
+├── 📄 README.md                       # Ce fichier
+├── 📄 Schéma.drawio                   # Topologie éditable
+├── 🖼️ Schéma.jpg                      # Image Topologie
+└── 🔌 SchémaPackettracer.pkt          # Simulation Cisco Packet Tracer
+```
+---
+
+## ⚙️ Installation
+### 🐳 Services Web (Docker)
+L'application Web et la base de données sont conteneurisées.
+
+* Accédez au dossier : Fichier de config/Services/Web
+* Lancez la stack :
+  
+```bash
+docker-compose up -d
+```
+* Accès via navigateur : http://localhost:80 (ou port configuré).
+
+### 🪟 Active Directory (Windows)
+* Domaine : societeX.pepiniere.rt
+* Utilisateurs : Scripts PowerShell disponibles dans la documentation pour générer l'arborescence (UO Admin, Prod, Perso).
+* GPO : Mappage lecteur réseau et restrictions configurés.
+
+### 🎥 Streaming Vidéo
+Utilisation de ffmpeg pour diffuser un flux UDP.
+
+* Serveur (Diffusion) :
+
+```bash
+ffmpeg -stream_loop -1 -i CatHuh.mp4 -f mpegts udp://172.31.20.156:5000
+```
+
+* Client (Lecture) :
+```bash
+ffplay -i udp://172.31.20.156:5000
+```
+
+### 🔒 Proxy (Squid)
+Modification de la politique de sécurité dans /etc/squid/squid.conf :
+
+```bash
+# Autoriser le trafic (par défaut deny)
+http_access allow all
+```
+---
+
+## 👥 Auteurs
+Projet réalisé par l'équipe :
+
+| Nom | Rôle |
+| :--- | :--- |
+| **Pierre Famchon** | Lead Network / Config Cisco |
+| **Michel Bauchart** | Services Windows / AD |
+| **Baptiste Duval** | Services Linux / Web |
+| **Nicolas Edouard** | Documentation / Tests |
