@@ -28,27 +28,28 @@
 
 ## 📝 Description
 
-Ce projet vise à **renforcer la sécurité d'une infrastructure réseau multi-sites** (Siège et Succursale) reliés par un tunnel IPSEC. [cite_start]L'objectif est de protéger le système d'information contre des attaques courantes telles que l'empoisonnement de cache DNS, les attaques MITM et les injections Web [cite: 129-130].
+Ce projet vise à **renforcer la sécurité d'une infrastructure réseau multi-sites** (Siège et Succursale) reliés par un tunnel IPSEC.
+L'objectif est de protéger le système d'information contre des attaques courantes telles que l'empoisonnement de cache DNS, les attaques MITM et les injections Web.
 
 L'architecture est segmentée en trois zones distinctes pour limiter la surface d'attaque :
 * **Admin (VLAN 10) :** Serveurs critiques (DNS, Web).
 * **Production (VLAN 20) :** Systèmes industriels.
-* [cite_start]**Service (VLAN 30) :** Utilisateurs standards [cite: 142-145].
+* **Service (VLAN 30) :** Utilisateurs standards.
 
 ---
 
 ## ✨ Fonctionnalités
 
 ### 🛡️ Sécurité Réseau
-* [cite_start]**Segmentation & Filtrage :** Cloisonnement par VLANs et filtrage strict via ACLs (ex: interdiction ping Prod <-> Service) [cite: 479-482].
-* [cite_start]**Pare-feux ASA :** Inspection de paquets (DPI) et gestion de zones de sécurité (Inside 100, Outside 0, DMZ 50) [cite: 631-641].
-* [cite_start]**Redondance :** Haute disponibilité des passerelles via protocole **HSRP**[cite: 449].
-* [cite_start]**Confidentialité :** Tunnel VPN IPSEC pour les communications inter-sites[cite: 178].
+* **Segmentation & Filtrage :** Cloisonnement par VLANs et filtrage strict via ACLs (ex: interdiction ping Prod <-> Service).
+* **Pare-feux ASA :** Inspection de paquets (DPI) et gestion de zones de sécurité (Inside 100, Outside 0, DMZ 50).
+* **Redondance :** Haute disponibilité des passerelles via protocole **HSRP**.
+* **Confidentialité :** Tunnel VPN IPSEC pour les communications inter-sites.
 
 ### 🔐 Services Sécurisés
-* [cite_start]**DNSSEC :** Signature cryptographique de la zone `societe2.pepiniere.rt` (clés KSK/ZSK) pour garantir l'authenticité des réponses [cite: 821-830].
-* [cite_start]**Web Application Firewall (WAF) :** Configuration Nginx avancée (HSTS, Anti-XSS, Anti-Clickjacking) [cite: 1018-1028].
-* [cite_start]**Authentification Forte :** Application Flask avec hashage des mots de passe (Werkzeug) et **CAPTCHA dynamique** fait maison pour contrer le brute-force[cite: 857, 1098].
+* **DNSSEC :** Signature cryptographique de la zone `societe2.pepiniere.rt` (clés KSK/ZSK) pour garantir l'authenticité des réponses.
+* **Web Application Firewall (WAF) :** Configuration Nginx avancée (HSTS, Anti-XSS, Anti-Clickjacking).
+* **Authentification Forte :** Application Flask avec hashage des mots de passe (Werkzeug) et **CAPTCHA dynamique** fait maison pour contrer le brute-force.
 
 ---
 
