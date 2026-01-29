@@ -81,26 +81,26 @@ Ce projet s'appuie sur une stack Python robuste pour le backend et les standards
 Voici l'organisation détaillée des fichiers du projet :
 
 ```text
-SAE3.02 - Développer des applications communicantes/
-├── app.py                      # Le cœur de l'application Flask
-├── requirements.txt            # Liste des dépendances Python
-├── static/
+📁 SAE3.02 - Développer des applications communicantes/
+├── 📄 app.py                      # Le cœur de l'application Flask
+├── 📄 requirements.txt            # Liste des dépendances Python
+├── 📁 static/
 │   └── css/
-│       └── style.css           # Styles CSS du frontend
-├── templates/
-│   ├── index.html              # Formulaire de recherche (page d'accueil)
-│   └── results.html            # Gabarit d'affichage des résultats
-├── text_files/                 # Dossier pour les fichiers .txt à indexer
-│   ├── test1.txt
-│   └── test2.txt
-├── pdf_files/                  # Dossier pour les fichiers .pdf à indexer
-│   ├── R302_Cours_BGP_vf.pdf
+│       └── 📄 style.css           # Styles CSS du frontend
+├── 📁 templates/
+│   ├── 📄 index.html              # Formulaire de recherche (page d'accueil)
+│   └── 📄 results.html            # Gabarit d'affichage des résultats
+├── 📁 text_files/                 # Dossier pour les fichiers .txt à indexer
+│   ├── 📄 test1.txt
+│   └── 📄 test2.txt
+├── 📁 pdf_files/                  # Dossier pour les fichiers .pdf à indexer
+│   ├── 📄 R302_Cours_BGP_vf.pdf
 │   └── ...
-├── html_files/                 # Dossier pour les fichiers .html à indexer
-│   ├── test1.html
+├── 📁 html_files/                 # Dossier pour les fichiers .html à indexer
+│   ├── 📄 test1.html
 │   └── ...
-└── excel_files/                # Dossier pour les fichiers .xlsx à indexer
-    └── rap.xlsx
+└── 📁 excel_files/                # Dossier pour les fichiers .xlsx à indexer
+    └── 📄 rap.xlsx
 ```
 ---
 
