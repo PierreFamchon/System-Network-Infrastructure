@@ -56,16 +56,16 @@ La solution repose sur une architecture conteneurisée pour assurer portabilité
 L'architecture des scripts est organisée pour séparer les données sources de la logique de traitement.
 
 ```text
-netbox-device-autodiscovery/
-├── network_devices/       # Dossier contenant les sources de données
-│   ├── access-points/     # Fichiers YAML/CSV pour les APs
-│   └── switches/          # Fichiers YAML/CSV pour les Switchs
-├── import_yaml/           # Cœur de l'automatisation Python
-│   ├── main.py            # Point d'entrée du programme
-│   ├── device_manager.py  # Logique de création (Devices, Interfaces, IPs)
-│   ├── netbox_api.py      # Wrapper pour les appels API REST (GET/POST/PATCH)
-│   ├── netbox_config.py   # Fichier de configuration (URL, Token, Headers)
-│   └── yaml_processor.py  # Traitement et parsing des fichiers sources
+📁 netbox-device-autodiscovery/
+├── 📁 network_devices/       # Dossier contenant les sources de données
+│   ├── 📁 access-points/     # Fichiers YAML/CSV pour les APs
+│   └── 📁 switches/          # Fichiers YAML/CSV pour les Switchs
+├── 📁 import_yaml/           # Cœur de l'automatisation Python
+│   ├── 📄 main.py            # Point d'entrée du programme
+│   ├── 📄 device_manager.py  # Logique de création (Devices, Interfaces, IPs)
+│   ├── 📄 netbox_api.py      # Wrapper pour les appels API REST (GET/POST/PATCH)
+│   ├── 📄 netbox_config.py   # Fichier de configuration (URL, Token, Headers)
+│   └── 📄 yaml_processor.py  # Traitement et parsing des fichiers sources
 ```
 ---
 
