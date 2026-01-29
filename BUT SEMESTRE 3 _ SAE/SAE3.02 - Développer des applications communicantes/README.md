@@ -89,6 +89,7 @@ Voici l'organisation détaillée des fichiers du projet :
 
 ```text
 📁 SAE3.02 - Développer des applications communicantes/
+├── 📄 README.md                   # README du projet
 ├── 📄 app.py                      # Le cœur de l'application Flask
 ├── 📄 requirements.txt            # Liste des dépendances Python
 ├── 📁 static/
