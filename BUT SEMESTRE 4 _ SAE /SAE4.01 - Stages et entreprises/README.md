@@ -2,6 +2,7 @@
 
 # 📡 Network Discovery & Inventory Automation
 
+ **Stage à la DSI de l'UTC (Université Technologique de Compiègne).**
 
 <p align="center">
   <img src="https://img.shields.io/badge/NetBox-v4.0+-blue?style=for-the-badge&logo=netbox&logoColor=white" alt="NetBox"/>
@@ -11,6 +12,8 @@
   <img src="https://img.shields.io/badge/Database-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 </p>
 
+</div>
+
 [Description](#-description) •
 [Matériel & Stack Technique](#-matériel--stack-technique) •
 [Structure du Projet](#-structure-du-projet) • 
@@ -18,8 +21,6 @@
 [Phases du Projet](#-phases-du-projet) •
 [Bilan](#-bilan) •
 [Auteurs](#-auteurs)
-
-</div>
 
 ---
 
