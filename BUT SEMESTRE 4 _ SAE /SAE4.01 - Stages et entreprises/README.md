@@ -15,12 +15,6 @@
   <img src="https://img.shields.io/badge/Database-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 </p>
 
-</div>
-
----
-
-## 📑 Table des Matières
-
 [Description](#-description) •
 [Matériel & Stack Technique](#-matériel--stack-technique) •
 [Structure du Projet](#-structure-du-projet) • 
@@ -28,6 +22,8 @@
 [Phases du Projet](#-phases-du-projet) •
 [Bilan](#-bilan) •
 [Auteurs](#-auteurs)
+
+</div>
 
 ---
 
