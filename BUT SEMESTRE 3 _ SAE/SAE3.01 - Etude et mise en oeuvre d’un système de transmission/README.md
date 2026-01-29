@@ -35,8 +35,6 @@ Le projet porte sur l'exploration approfondie de la **Radio Logicielle (SDR)**. 
 
 ## 🛠 Matériel et Logiciels
 
-## 🛠 Stack Technique
-
 ### 🧰 Équipement Hardware
 
 ![SDR](https://img.shields.io/badge/SDR-ADALM%20PLUTO-005f9e?style=for-the-badge&logo=analogdevices&logoColor=white)
