@@ -35,18 +35,20 @@ Le projet porte sur l'exploration approfondie de la **Radio Logicielle (SDR)**. 
 
 ## 🛠 Matériel et Logiciels
 
+## 🛠 Stack Technique
+
 ### 🧰 Équipement Hardware
-| Équipement | Modèle | Caractéristiques |
-| :--- | :--- | :--- |
-| **SDR** | [Analog Devices ADALM-PLUTO](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html) | RX/TX : 325 MHz - 3.8 GHz |
-| **Analyseur** | Spectran HF-6065 V4 | Analyse spectrale portative |
-| **Antenne** | HyperLOG 7060 | Directionnelle Log-périodique (700 MHz - 6 GHz) |
+
+![SDR](https://img.shields.io/badge/SDR-ADALM%20PLUTO-005f9e?style=for-the-badge&logo=analogdevices&logoColor=white)
+![Analyzer](https://img.shields.io/badge/ANALYZER-SPECTRAN%20HF--6065-404040?style=for-the-badge&labelColor=e04e39)
+![Antenna](https://img.shields.io/badge/ANTENNA-HYPERLOG%207060-404040?style=for-the-badge&labelColor=7c4dff)
 
 ### 💻 Environnement Software
-* **GNU Radio Companion :** Conception des diagrammes de flux et traitement du signal.
-* **MCS Spectrum Analyzer :** Interface de contrôle pour le Spectran V4.
-* **VLC Media Player :** Streaming vidéo via protocole UDP.
-* **Pilotes :** PlutoSDR-M2k-USB-Drivers.
+
+![GNU Radio](https://img.shields.io/badge/SIGNAL-GNU%20RADIO-e86900?style=for-the-badge&logo=gnu-radio&logoColor=white)
+![MCS](https://img.shields.io/badge/ANALYSIS-MCS%20SPECTRUM-0078d7?style=for-the-badge&labelColor=404040)
+![VLC](https://img.shields.io/badge/STREAM-VLC%20PLAYER-ff8800?style=for-the-badge&logo=vlc&logoColor=white)
+![Drivers](https://img.shields.io/badge/DRIVERS-PLUTOSDR%20USB-555555?style=for-the-badge&logo=usb&logoColor=white)
 
 ---
 
