@@ -43,11 +43,24 @@ Suite à une refonte de l'infrastructure, l'objectif était de créer une **Sour
 
 La solution repose sur une architecture conteneurisée pour assurer portabilité et isolation.
 
-* **OS :** Linux (Ubuntu recommandé).
-* **Conteneurisation :** Docker & Docker Compose (v2).
-* **NetBox :** Gestionnaire d'inventaire (DCIM) et IPAM.
-* **NetDisco :** Scanner réseau (SNMP v2c/v3, LLDP).
-* **Python 3.x :** Scripts d'automatisation (`requests`, `pyyaml`, `icecream`).
+### Infrastructure & Virtualisation
+
+![Linux](https://img.shields.io/badge/OS-UBUNTU-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Docker](https://img.shields.io/badge/CONTAINER-DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Compose](https://img.shields.io/badge/ORCHESTRATION-DOCKER%20COMPOSE-2496ED?style=for-the-badge&labelColor=404040&logo=docker&logoColor=white)
+
+### Applications Core
+
+![NetBox](https://img.shields.io/badge/IPAM%20%2F%20DCIM-NETBOX-00ADD8?style=for-the-badge&logo=netbox&logoColor=white)
+![NetDisco](https://img.shields.io/badge/SCANNER-NETDISCO-7cb342?style=for-the-badge&labelColor=404040)
+![Protocols](https://img.shields.io/badge/PROTOCOL-SNMP%20%2F%20LLDP-404040?style=for-the-badge)
+
+### Automatisation & Scripts
+
+![Python](https://img.shields.io/badge/LANGUAGE-PYTHON%203.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Requests](https://img.shields.io/badge/LIB-REQUESTS-3776AB?style=for-the-badge&labelColor=404040)
+![PyYAML](https://img.shields.io/badge/LIB-PYYAML-3776AB?style=for-the-badge&labelColor=404040)
+![Icecream](https://img.shields.io/badge/LIB-ICECREAM-3776AB?style=for-the-badge&labelColor=404040)
 
 ---
 
