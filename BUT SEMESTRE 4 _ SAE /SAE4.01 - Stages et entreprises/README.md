@@ -1,16 +1,18 @@
 <div align="center">
 
-# 📡 Network Discovery & Inventory Automation
+  <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="Logo Network Discovery" width="120" height="120">
 
- **Stage à la DSI de l'UTC (Université Technologique de Compiègne).**
+  # 📡 Network Discovery & Inventory Automation
 
-<p align="center">
-  <img src="https://img.shields.io/badge/NetBox-v4.0+-blue?style=for-the-badge&logo=netbox&logoColor=white" alt="NetBox"/>
-  <img src="https://img.shields.io/badge/NetDisco-v2-green?style=for-the-badge&logo=network&logoColor=white" alt="NetDisco"/>
-  <img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Database-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-</p>
+  **Stage à la DSI de l'UTC (Université Technologique de Compiègne).**
+
+  <p align="center">
+    <img src="https://img.shields.io/badge/NetBox-v4.0+-blue?style=for-the-badge&logo=netbox&logoColor=white" alt="NetBox"/>
+    <img src="https://img.shields.io/badge/NetDisco-v2-green?style=for-the-badge&logo=network&logoColor=white" alt="NetDisco"/>
+    <img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+    <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+    <img src="https://img.shields.io/badge/Database-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  </p>
 
 </div>
 
