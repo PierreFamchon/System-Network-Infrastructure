@@ -35,7 +35,7 @@ Il couvre un large spectre de compétences allant de l'administration système e
 Voici l'organisation globale des fichiers et projets présents dans ce répertoire :
 
 ```text
-.
+📂 RT2-Projets
 ├── 📂 BUT SEMESTRE 3 _ SAE/
 │   ├── 📂 SAE3.01 - Etude et mise en oeuvre d'un système de transmission
 │   ├── 📂 SAE3.02 - Développer des applications communicantes
