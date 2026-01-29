@@ -90,7 +90,7 @@ L'architecture est segmentée en trois zones distinctes pour limiter la surface 
 L'arborescence du projet est organisée comme suit :
 
 ```text
-.
+📂 SAE4.Cyber.01 - Sécuriser un système d’information/
 ├── 📂 Organisation/
 │   ├── 📊 Matrice RACI.xlsx               # Répartition des rôles
 │   └── 📄 Shéma-Réseau.drawio             # Schéma d'architecture éditable
