@@ -85,7 +85,7 @@ Voici l'organisation détaillée des fichiers du projet :
 ├── 📄 app.py                      # Le cœur de l'application Flask
 ├── 📄 requirements.txt            # Liste des dépendances Python
 ├── 📁 static/
-│   └── css/
+│   └── 📁 css/
 │       └── 📄 style.css           # Styles CSS du frontend
 ├── 📁 templates/
 │   ├── 📄 index.html              # Formulaire de recherche (page d'accueil)
