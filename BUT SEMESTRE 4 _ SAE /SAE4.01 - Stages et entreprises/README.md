@@ -3,10 +3,6 @@
 # 📡 Network Discovery & Inventory Automation
 ## SOURCE OF TRUTH (SoT)
 
-**Stage DSI - Université de Technologie de Compiègne (UTC)**
-
----
-
 <p align="center">
   <img src="https://img.shields.io/badge/NetBox-v4.0+-blue?style=for-the-badge&logo=netbox&logoColor=white" alt="NetBox"/>
   <img src="https://img.shields.io/badge/NetDisco-v2-green?style=for-the-badge&logo=network&logoColor=white" alt="NetDisco"/>
