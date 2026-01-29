@@ -1,7 +1,7 @@
 <div align="center">
 
-  <img src="https://cdn-icons-png.flaticon.com/512/2620/2620563.png" alt="Logo Projet" width="120" height="120">
-
+  <img src="https://cdn-icons-png.flaticon.com/512/2282/2282186.png" alt="Logo Server Infrastructure" width="120" height="120">
+  
   # SAE 3.03 - Architecture Réseau Multi-Sites
   
   **Conception, déploiement et administration d'un réseau d'entreprise interconnecté.**
