@@ -127,7 +127,7 @@ L'architecture des scripts est organisée pour séparer les données sources de 
 
 ## ⚙️ <a name="installation"></a>Installation & Utilisation
 
-### Déploiement Docker
+### 1. Déploiement Docker
 
 * **A. NetBox (IPAM/DCIM)**
 
@@ -161,7 +161,7 @@ chmod 777 logs config nd-site-local
 sudo docker compose up -d
 ```
 
-### Configuration des Scripts
+### 2. Configuration des Scripts
 Editez le fichier netbox-device-autodiscovery/import_yaml/netbox_config.py avec vos accès :
 
 ```bash
@@ -174,7 +174,7 @@ HEADERS = {
 }
 DEBUG_MODE = True
 ```
-### Utilisation / Exécution
+### 3. Utilisation / Exécution
 
 * **Étape A :**
   Préparation des données (Export NetDisco) Si vous n'utilisez pas de fichiers YAML manuels, exportez les données découvertes par NetDisco en CSV directement depuis la base de données :
