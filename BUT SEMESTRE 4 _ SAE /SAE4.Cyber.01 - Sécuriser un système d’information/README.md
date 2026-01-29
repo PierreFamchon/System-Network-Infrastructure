@@ -159,7 +159,9 @@ Les tests de sécurité offensifs ont validé l'efficacité des mesures :
 
 Projet réalisé dans le cadre de la formation R&T (2024-2025) par :
 
-* Pierre FAMCHON - Tests de sécurité & Rapport
-* Michel BACHART - Sécurisation DNS
-* Baptiste DUVAL - Sécurisation Web
-* Nicolas EDOUARD - Recommandations ANSSI
+| Nom | Rôle |
+| :--- | :--- |
+| **Pierre Famchon** | Lead Network / Config Cisco |
+| **Michel Bauchart** | Services Windows, AD / Sécurisation DNS|
+| **Baptiste Duval** | Services Web / Sécurisation Web|
+| **Nicolas Edouard** | Recommandations ANSSI / Tests |
