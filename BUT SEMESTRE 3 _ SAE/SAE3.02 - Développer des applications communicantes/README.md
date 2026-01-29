@@ -63,16 +63,23 @@ L'objectif principal est de développer une application web légère basée sur 
 
 Ce projet s'appuie sur une stack Python robuste pour le backend et les standards du web pour le frontend.
 
-| Catégorie | Technologie | Rôle |
-| :--- | :--- | :--- |
-| **Backend** | `Python 3` | Langage de programmation principal. |
-| **Backend** | `Flask` | Framework web pour la gestion des routes (`/`, `/search`). |
-| **Parsing** | `PyPDF2` | Extraction de texte des fichiers PDF. |
-| **Parsing** | `BeautifulSoup` | Extraction de texte brut des fichiers HTML. |
-| **Parsing** | `openpyxl` | Lecture des fichiers Excel (`.xlsx`). |
-| **Logique** | `re` (module) | Gestion des expressions régulières. |
-| **Frontend** | `HTML5 / Jinja2` | Structure des pages et templating. |
-| **Frontend** | `CSS3` | Mise en forme (`style.css`). |
+### Backend & Logique
+
+![Python](https://img.shields.io/badge/LANGUAGE-PYTHON%203-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/FRAMEWORK-FLASK-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Regex](https://img.shields.io/badge/LOGIC-REGEX%20(RE)-404040?style=for-the-badge&labelColor=7c4dff)
+
+### Parsing & Extraction de Données
+
+![PyPDF2](https://img.shields.io/badge/PDF-PYPDF2-e04e39?style=for-the-badge&labelColor=404040&logo=adobeacrobatreader&logoColor=white)
+![BeautifulSoup](https://img.shields.io/badge/HTML-BEAUTIFULSOUP-404040?style=for-the-badge&labelColor=3776ab)
+![Openpyxl](https://img.shields.io/badge/EXCEL-OPENPYXL-1D6F42?style=for-the-badge&labelColor=404040&logo=microsoftexcel&logoColor=white)
+
+### Frontend & Interface
+
+![HTML5](https://img.shields.io/badge/MARKUP-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Jinja2](https://img.shields.io/badge/TEMPLATE-JINJA2-B41717?style=for-the-badge&logo=jinja&logoColor=white)
+![CSS3](https://img.shields.io/badge/STYLE-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ---
 
