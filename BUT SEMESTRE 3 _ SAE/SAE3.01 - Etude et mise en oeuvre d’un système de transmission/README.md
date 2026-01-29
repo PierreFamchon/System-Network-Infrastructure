@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://cdn-icons-png.flaticon.com/512/2859/2859724.png" alt="Logo SDR Oscilloscope" width="120" height="120">
+  <img src="https://cdn-icons-png.flaticon.com/512/3659/3659898.png" alt="Logo SDR Antenne" width="120" height="120">
 
   # SAE 3.01 : Système de Transmission SDR
   
