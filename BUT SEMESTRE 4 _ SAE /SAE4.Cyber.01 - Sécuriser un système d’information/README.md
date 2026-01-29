@@ -90,18 +90,55 @@ L'architecture est segmentée en trois zones distinctes pour limiter la surface 
 L'arborescence du projet est organisée comme suit :
 
 ```text
-📁 SAE-Cyber-Security/
-├── 📁 Network_Config/
-│   ├── 📁 Routers/           # Configs R1, R2, R3 (OSPF, Tunnel)
-|   ├── 📁 Switches/          # Configs L3_Siege, L3_Succu (VLANs, HSRP)
-|   └── 📁 Firewalls/         # Configs ASA (Policies, NAT)
-├── 📁 Web_Server/
-├── 📁 Nginx/             # Fichiers .conf (SSL, Headers sécurité)
-│   ├── 📁 App_Flask/         # Code Python (app.py) et Templates HTML 
-│   └── 📁 Database/          # Script SQL création users 
-└── 📁 Documentation/
-    ├── 📄 Rapport_Projet.pdf # Rapport complet
-    └── 📁 ANSSI_Compliance/  # Matrice de conformité ANSSI
+.
+├── 📂 Organisation/
+│   ├── 📊 Matrice RACI.xlsx               # Répartition des rôles
+│   └── 📄 Shéma-Réseau.drawio             # Schéma d'architecture éditable
+│
+├── 📂 Pentest/
+│   ├── 📄 Exemple pentest.docx            # Méthodologie et tests
+│   └── 📄 Rapport pentest.docx            # Résultats des audits
+│
+├── 📂 Recommendations ANSSI/
+│   ├── 📊 Recommandation_Anssi_...xlsx    # Tableau de suivi de conformité
+│   └── 📄 Synthèse des recommandations.docx
+│
+├── 📂 Réseau/
+│   ├── 📂 Config maquette/
+│   │   ├── 📂 Brouillon/
+│   │   │   ├── 📄 Config.docx
+│   │   │   ├── 📄 Vrai brouillon.docx
+│   │   │   └── 🔌 test.pkt                # Test Packet Tracer
+│   │   │
+│   │   ├── 📂 ISO pour GNS3/
+│   │   │   └── 📄 ISO.docx
+│   │   │
+│   │   ├── 📂 Pare-Feu/
+│   │   │   └── 🔌 config-router.pkt       # Config Firewall Cisco
+│   │   │
+│   │   ├── 📂 Routeur/
+│   │   │   ├── 📄 commandes routeur.docx  # Mémo commandes
+│   │   │   ├── 📄 config routeur.docx     # Configuration appliquée
+│   │   │   └── 📄 router cisco.docx
+│   │   │
+│   │   └── 📂 Switch/
+│   │       ├── 📄 commandes switch.docx
+│   │       └── 📄 config switch.docx
+│   │
+│   ├── 📂 Services/
+│   │   ├── 📂 Serveur Web/
+│   │   │   ├── 📄 Rapport serveur web.docx
+│   │   │   └── 📄 Sécur web.docx          # Durcissement Nginx/Apache
+│   │   │
+│   │   └── 📂 Serveur Windows/
+│   │       └── 📄 Windows.docx            # Config DNS / AD
+│   │
+│   ├── 🔌 Maquettefinale.pkt              # Simulation finale Packet Tracer
+│   ├── 📄 README.md                       # Documentation du projet
+│   ├── 🔌 SansACL.pkt                     # Version sans filtrage
+│   ├── 📄 Write Up.docx                   # Rapport technique (Word)
+│   ├── 📄 Write Up.pdf                    # Rapport technique (PDF)
+│   └── 🔌 test.pkt                        # Fichier de test réseau
 ```
 ---
 
