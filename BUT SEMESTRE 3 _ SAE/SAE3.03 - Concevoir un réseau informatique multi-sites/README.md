@@ -65,7 +65,7 @@ Ce projet vise à concevoir une infrastructure réseau complète pour une entrep
 Voici l'organisation détaillée des fichiers du projet :
 
 ```text
-.
+📁 SAE3.03 - Concevoir un réseau informatique multi-sites/
 ├── 📁 Documentation/
 │   ├── 📄 NAT.docx                    # Configuration du NAT
 │   ├── 📄 Tunnel GRE.docx             # Mise en place du tunnel inter-sites
