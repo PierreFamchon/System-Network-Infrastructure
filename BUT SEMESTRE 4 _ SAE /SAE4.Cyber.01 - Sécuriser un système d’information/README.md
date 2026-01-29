@@ -54,13 +54,34 @@ L'architecture est segmentée en trois zones distinctes pour limiter la surface 
 
 ## 🛠 Stack Technique
 
-| Catégorie | Technologies |
-| :--- | :--- |
-| **Réseau** | Cisco IOS, ASA Firewall, OSPF, HSRP, SSHv2 |
-| **Système** | Windows Server (DNS Manager), Linux (Ubuntu) |
-| **Web** | Nginx (Reverse Proxy/WAF), Python (Flask), MySQL |
-| **Outils Pentest** | Kali Linux, OWASP ZAP, Bettercap, SQLMap, Nmap |
+### Infrastructure & Réseau
 
+![Cisco](https://img.shields.io/badge/CISCO-IOS-00bceb?style=for-the-badge&logo=cisco&logoColor=white)
+![Firewall](https://img.shields.io/badge/FIREWALL-CISCO%20ASA-00bceb?style=for-the-badge&labelColor=404040&logo=cisco&logoColor=white)
+![Routing](https://img.shields.io/badge/ROUTING-OSPF-e04e39?style=for-the-badge&labelColor=404040)
+![Redundancy](https://img.shields.io/badge/REDUNDANCY-HSRP-e04e39?style=for-the-badge&labelColor=404040)
+![Security](https://img.shields.io/badge/SECURITY-SSHv2-7c4dff?style=for-the-badge&labelColor=404040)
+
+### Système & Services
+
+![Windows Server](https://img.shields.io/badge/WINDOWS-DNS%20MANAGER-0078d7?style=for-the-badge&logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/LINUX-UBUNTU-fcc624?style=for-the-badge&logo=linux&logoColor=black)
+![Protocol](https://img.shields.io/badge/PROTOCOL-DNSSEC-crimson?style=for-the-badge&labelColor=404040&logo=security&logoColor=white)
+
+### Application Web & Données
+
+![Nginx](https://img.shields.io/badge/WEB-NGINX%20(WAF)-009639?style=for-the-badge&labelColor=404040&logo=nginx&logoColor=white)
+![Python](https://img.shields.io/badge/BACKEND-PYTHON-3776ab?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/FRAMEWORK-FLASK-000000?style=for-the-badge&logo=flask&logoColor=white)
+![MySQL](https://img.shields.io/badge/DATABASE-MYSQL-4479a1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Outils de Pentest
+
+![Kali](https://img.shields.io/badge/OS-KALI%20LINUX-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
+![Scanner](https://img.shields.io/badge/SCANNING-NMAP-1679A7?style=for-the-badge&labelColor=404040)
+![Audit](https://img.shields.io/badge/AUDIT-OWASP%20ZAP-4B5CC4?style=for-the-badge&labelColor=404040&logo=owasp&logoColor=white)
+![Injection](https://img.shields.io/badge/INJECTION-SQLMAP-e04e39?style=for-the-badge&labelColor=404040)
+![MITM](https://img.shields.io/badge/ATTACK-BETTERCAP-crimson?style=for-the-badge&labelColor=404040)
 ---
 
 ## 📂 Structure
