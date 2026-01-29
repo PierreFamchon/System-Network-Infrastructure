@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://cdn-icons-png.flaticon.com/512/751/751463.png" alt="Logo Search App" width="120" height="120">
+  <img src="https://cdn-icons-png.flaticon.com/512/2814/2814666.png" alt="Logo File Search" width="120" height="120">
 
   # SAE 3.02 - Développer des applications communicantes
   
