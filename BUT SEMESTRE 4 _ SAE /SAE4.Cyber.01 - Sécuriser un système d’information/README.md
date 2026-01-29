@@ -68,16 +68,76 @@ L'architecture est segmentée en trois zones distinctes pour limiter la surface 
 L'arborescence du projet est organisée comme suit :
 
 ```text
-SAE-Cyber-Security/
-├── Network_Config/
-[cite_start]│   ├── Routers/           # Configs R1, R2, R3 (OSPF, Tunnel) [cite: 165]
-[cite_start]│   ├── Switches/          # Configs L3_Siege, L3_Succu (VLANs, HSRP) [cite: 384]
-[cite_start]│   └── Firewalls/         # Configs ASA (Policies, NAT) [cite: 620]
-├── Web_Server/
-[cite_start]│   ├── Nginx/             # Fichiers .conf (SSL, Headers sécurité) [cite: 1008]
-[cite_start]│   ├── App_Flask/         # Code Python (app.py) et Templates HTML [cite: 853]
-[cite_start]│   └── Database/          # Script SQL création users [cite: 953]
-└── Documentation/
-    ├── Rapport_Projet.pdf # Rapport complet
-    └── ANSSI_Compliance/  # Matrice de conformité ANSSI
+📁 SAE-Cyber-Security/
+├── 📁 Network_Config/
+│   ├── 📁 Routers/           # Configs R1, R2, R3 (OSPF, Tunnel)
+|   ├── 📁 Switches/          # Configs L3_Siege, L3_Succu (VLANs, HSRP)
+|   └── 📁 Firewalls/         # Configs ASA (Policies, NAT)
+├── 📁 Web_Server/
+├── 📁 Nginx/             # Fichiers .conf (SSL, Headers sécurité)
+│   ├── 📁 App_Flask/         # Code Python (app.py) et Templates HTML 
+│   └── 📁 Database/          # Script SQL création users 
+└── 📁 Documentation/
+    ├── 📄 Rapport_Projet.pdf # Rapport complet
+    └── 📁 ANSSI_Compliance/  # Matrice de conformité ANSSI
 ```
+---
+
+## ⚙ Installation
+### Phase 1 : Configuration Réseau (Cisco)
+
+Charger les configurations sur les équipements respectifs. Assurez-vous d'activer le chiffrement des mots de passe :
+
+```cisco
+service password-encryption
+username admin privilege 15 secret 5 $1$mERr$tN2nmMK5hNorN4zAZEGGz.
+ip ssh version 2
+```
+### Phase 2 : Serveur DNS (Windows)
+
+* Installer le rôle Serveur DNS.
+* Créer la zone societe2.pepiniere.rt.
+* Signer la zone via DNSSEC (RSA/SHA-256, 2048 bits).
+
+### Phase 3 : Serveur Web (Linux)
+
+Installer Nginx et Python, puis configurer le WAF dans /etc/nginx/sites-available/flask_app :
+
+```nginx
+# Force HTTPS & Sécurité
+add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+add_header X-XSS-Protection "1; mode=block" always;
+```
+Générer les certificats SSL auto-signés via OpenSSL.
+
+---
+
+## 🚀 Phases du Projet
+
+* Architecture & Adressage : Définition des VLANs et du plan d'adressage IP .
+* Mise en œuvre Réseau : Configuration du routage OSPF, du Tunnel GRE/IPSEC et des ACLs.
+* Sécurisation DNS : Déploiement de DNSSEC pour empêcher le DNS Spoofing.
+* Sécurisation Web : Développement de l'app Flask sécurisée et durcissement Nginx.
+* Pentesting : Tests d'intrusion pour valider les défenses.
+
+---
+
+## 📊 Bilan
+
+Les tests de sécurité offensifs ont validé l'efficacité des mesures :
+
+* ✅ DNS Spoofing : Attaque via Bettercap échouée (la validation DNSSEC rejette la réponse falsifiée).
+* ✅ Injections SQL : Bloquées par l'utilisation de requêtes préparées et filtrage.
+* ✅ Brute-Force : Echec grâce au CAPTCHA et à la politique de bannissement.
+* ✅ Scan de Ports : Nmap confirme que seuls les ports 80/443 sont exposés.
+
+---
+
+## 👥 Auteurs
+
+Projet réalisé dans le cadre de la formation R&T (2024-2025) par :
+
+* Pierre FAMCHON - Tests de sécurité & Rapport
+* Michel BACHART - Sécurisation DNS
+* Baptiste DUVAL - Sécurisation Web
+* Nicolas EDOUARD - Recommandations ANSSI
