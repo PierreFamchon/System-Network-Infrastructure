@@ -65,7 +65,7 @@ La solution repose sur une architecture conteneurisée pour assurer portabilité
 L'architecture des scripts est organisée pour séparer les données sources de la logique de traitement.
 
 ```text
-.
+📂 SAE4.01 - Stages et entreprises/
 ├── 📂 config/
 │   ├── ⚙️ deployment.yml               # Configuration du déploiement
 │   └── ⚙️ production.yml               # Variables d'environnement de production
