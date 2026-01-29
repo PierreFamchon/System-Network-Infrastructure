@@ -65,16 +65,63 @@ La solution repose sur une architecture conteneurisée pour assurer portabilité
 L'architecture des scripts est organisée pour séparer les données sources de la logique de traitement.
 
 ```text
-📁 netbox-device-autodiscovery/
-├── 📁 network_devices/       # Dossier contenant les sources de données
-│   ├── 📁 access-points/     # Fichiers YAML/CSV pour les APs
-│   └── 📁 switches/          # Fichiers YAML/CSV pour les Switchs
-├── 📁 import_yaml/           # Cœur de l'automatisation Python
-│   ├── 📄 main.py            # Point d'entrée du programme
-│   ├── 📄 device_manager.py  # Logique de création (Devices, Interfaces, IPs)
-│   ├── 📄 netbox_api.py      # Wrapper pour les appels API REST (GET/POST/PATCH)
-│   ├── 📄 netbox_config.py   # Fichier de configuration (URL, Token, Headers)
-│   └── 📄 yaml_processor.py  # Traitement et parsing des fichiers sources
+.
+├── 📂 config/
+│   ├── ⚙️ deployment.yml               # Configuration du déploiement
+│   └── ⚙️ production.yml               # Variables d'environnement de production
+│
+├── 📂 documentation/
+│   ├── 📊 Alimentation-Baies...xlsx    # Inventaire électrique des baies
+│   ├── 📊 Assets_Inventory...xlsx      # Inventaire global des assets (2023)
+│   ├── 📊 Implantations-Baies...ods    # Plans d'implantation physique
+│   ├── 📊 matrcice utc V5.xlsx         # Matrice de flux / réseau
+│   ├── 📄 Bilan d avancement.txt       # Suivi de projet
+│   └── 📄 objectifs.txt                # Objectifs du stage
+│
+├── 📂 migration/
+│   ├── 📊 netbox_appareils.csv         # Import : Liste des équipements
+│   ├── 📊 netbox_cables.csv            # Import : Câblage structuré
+│   ├── 📊 netbox_fabricants(2).csv     # Import : Constructeurs (Cisco, HP...)
+│   ├── 📊 netbox_sites.csv             # Import : Lieux géographiques
+│   ├── 📊 prisecourant.csv             # Import : Prises PDU/Murales
+│   └── 📊 vlan.csv                     # Import : Plan d'adressage VLAN
+│
+├── 📂 netbox-device-autodiscovery/     # 🧠 Cœur de l'automatisation Python
+│   │
+│   ├── 📂 import_yaml/                 # Module : Importation via fichiers YAML
+│   │   ├── 📂 network_devices/         # Dossier source des définitions YAML
+│   │   ├── ⚙️ ap-si.yaml               # Exemple de définition d'AP
+│   │   ├── 🐍 main.py                  # Point d'entrée principal (Import YAML)
+│   │   ├── 🐍 device_manager.py        # Logique de gestion des devices
+│   │   ├── 🐍 netbox_api.py            # Wrapper API Netbox
+│   │   ├── 🐍 netbox_config.py         # Configuration API (Token, URL)
+│   │   ├── 🐍 yaml_processor.py        # Parser de fichiers YAML
+│   │   ├── 🐍 mac_ip_assignment.py     # Gestion des adresses MAC/IP
+│   │   └── 🐍 utils.py                 # Fonctions utilitaires
+│   │
+│   └── 📂 modules/                     # Module : Logique modulaire avancée
+│       ├── 🐍 run.py                   # Exécuteur de scripts
+│       ├── 🐍 configuration.py         # Gestionnaire de configuration
+│       ├── ⚙️ configuration.toml       # Fichier de config TOML (exemple)
+│       ├── 🐍 logger.py                # Gestion des logs
+│       ├── 🐍 netbox_templates.py      # Modèles de données Netbox
+│       ├── 🐍 test_script.py           # Tests unitaires/fonctionnels
+│       └── ⚙️ pyproject.toml           # Dépendances Python (Poetry/Pip)
+│
+├── 📂 netdisco-docker/                 # 🐳 Infrastructure de découverte
+│   ├── 🐳 docker-compose.yml           # Orchestration des conteneurs Netdisco
+│   ├── 📂 netdisco-base/               # Config de base Netdisco
+│   │   └── ⚙️ deployment.yml
+│   ├── 📂 netdisco-postgresql/         # Scripts d'init Base de Données
+│   │   └── 🐚 netdisco-initdb.sh
+│   └── 📂 scan_snmp/                   # Scripts de scan réseau
+│       ├── 🐍 netdisco_discover.py     # Script de découverte SNMP custom
+│       ├── 🐍 clean.py                 # Nettoyage des données brutes
+│       └── 📊 ip_list.csv              # Liste des cibles SNMP
+│
+├── 📄 Rapport de Stage.pdf             # Rapport académique final
+├── 📄 Rapport READEme Entreprise.pdf   # Documentation technique pour la DSI
+└── 📄 README.md                        # Documentation générale du dépôt
 ```
 ---
 
