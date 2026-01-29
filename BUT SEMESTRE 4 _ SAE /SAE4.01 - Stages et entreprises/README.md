@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📡 Network Discovery & Inventory Automation
-## SOURCE OF TRUTH (SoT)
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/NetBox-v4.0+-blue?style=for-the-badge&logo=netbox&logoColor=white" alt="NetBox"/>
