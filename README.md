@@ -66,7 +66,7 @@ Voici l'organisation globale des fichiers et projets présents dans ce répertoi
 | Projet | Thématique | Technologies Clés |
 | :--- | :--- | :--- |
 | **📂 [Professional-Internship-Reports](./Corporate-Security-Integration/Professional-Internship-Reports)** | **Automatisation Réseau (Stage)**<br>Source of Truth (SoT) avec NetBox et NetDisco. | ![Docker](https://img.shields.io/badge/Virt-Docker-2496ED) ![Netbox](https://img.shields.io/badge/IPAM-NetBox-00ADD8) |
-| **📂 [InfoSec-Infrastructure-Hardening](./Corporate-Security-Integration/InfoSec-Infrastructure-Hardening)** | **[Sécurisation SI](./Corporate-Security-Integration/InfoSec-Infrastructure-Hardening)**<br>Durcissement d'infrastructure, DNSSEC et WAF. | ![Sec](https://img.shields.io/badge/Sec-DNSSEC-red) ![WAF](https://img.shields.io/badge/Web-Nginx_WAF-009639) |
+| **📂 [InfoSec-Infrastructure-Hardening](./Corporate-Security-Integration/InfoSec-Infrastructure-Hardening)** | **Sécurisation **<br>Durcissement d'infrastructure, DNSSEC et WAF. | ![Sec](https://img.shields.io/badge/Sec-DNSSEC-red) ![WAF](https://img.shields.io/badge/Web-Nginx_WAF-009639) |
 
 
 ---
