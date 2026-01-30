@@ -51,21 +51,22 @@ Voici l'organisation globale des fichiers et projets présents dans ce répertoi
 
 ## 🎓 Détail des Semestres
 
-### 📂 BUT SEMESTRE 3
+### 📂 BUT SEMESTRE 3 :
+[Telecoms-Network-Engineering](./Telecoms-Network-Engineering)
 
 | Projet | Thématique | Technologies Clés |
 | :--- | :--- | :--- |
-| **📂 [Signal-Transmission-Systems](https://github.com/PierreFamchon/System-Network-Infrastructure/tree/main/Telecoms-Network-Engineering/Signal-Transmission-Systems)** | **Système de Transmission (SDR)**<br>Analyse spectrale et transmission vidéo. | ![SDR](https://img.shields.io/badge/HW-Adalm_Pluto-blue) ![GNU](https://img.shields.io/badge/Soft-GNU_Radio-orange) |
-| **📂 [Network-Socket-Programming](https://github.com/PierreFamchon/System-Network-Infrastructure/tree/main/Telecoms-Network-Engineering/Network-Socket-Programming)** | **App Communicante**<br>Moteur de recherche multi-formats (PDF, Excel, Web). | ![Python](https://img.shields.io/badge/Dev-Python_Flask-yellow) ![Regex](https://img.shields.io/badge/Logic-Regex-lightgrey) |
-| **📂 [WAN-Routing-Architecture](https://github.com/PierreFamchon/System-Network-Infrastructure/tree/main/Telecoms-Network-Engineering/WAN-Routing-Architecture)** | **Architecture Multi-Sites**<br>Interconnexion réseau d'entreprise et routage. | ![Cisco](https://img.shields.io/badge/Net-Cisco-1BA0D7) ![Routing](https://img.shields.io/badge/Proto-OSPF%2FHSRP-green) |
-| **📂 [Offensive-Security-Pentesting](https://github.com/PierreFamchon/System-Network-Infrastructure/tree/main/Telecoms-Network-Engineering/Offensive-Security-Pentesting)** | **Pentesting**<br>Audit de vulnérabilités et CTF (Capture The Flag). | ![Kali](https://img.shields.io/badge/OS-Kali_Linux-557C94) ![Metasploit](https://img.shields.io/badge/Tool-Metasploit-333333) |
+| **📂 [Signal-Transmission-Systems](./Telecoms-Network-Engineering/Signal-Transmission-Systems)** | **Système de Transmission (SDR)**<br>Analyse spectrale et transmission vidéo. | ![SDR](https://img.shields.io/badge/HW-Adalm_Pluto-blue) ![GNU](https://img.shields.io/badge/Soft-GNU_Radio-orange) |
+| **📂 [Network-Socket-Programming](./Telecoms-Network-Engineering/Network-Socket-Programming)** | **App Communicante**<br>Moteur de recherche multi-formats (PDF, Excel, Web). | ![Python](https://img.shields.io/badge/Dev-Python_Flask-yellow) ![Regex](https://img.shields.io/badge/Logic-Regex-lightgrey) |
+| **📂 [WAN-Routing-Architecture](./Telecoms-Network-Engineering/WAN-Routing-Architecture)** | **Architecture Multi-Sites**<br>Interconnexion réseau d'entreprise et routage. | ![Cisco](https://img.shields.io/badge/Net-Cisco-1BA0D7) ![Routing](https://img.shields.io/badge/Proto-OSPF%2FHSRP-green) |
+| **📂 [Offensive-Security-Pentesting](./Telecoms-Network-Engineering/Offensive-Security-Pentesting)** | **Pentesting**<br>Audit de vulnérabilités et CTF (Capture The Flag). | ![Kali](https://img.shields.io/badge/OS-Kali_Linux-557C94) ![Metasploit](https://img.shields.io/badge/Tool-Metasploit-333333) |
 
 ### 📂 BUT SEMESTRE 4
 
 | Projet | Thématique | Technologies Clés |
 | :--- | :--- | :--- |
-| **📂 [Professional-Internship-Reports](https://github.com/PierreFamchon/System-Network-Infrastructure/tree/main/Corporate-Security-Integration/Professional-Internship-Reports)** | **Automatisation Réseau (Stage)**<br>Source of Truth (SoT) avec NetBox et NetDisco. | ![Docker](https://img.shields.io/badge/Virt-Docker-2496ED) ![Netbox](https://img.shields.io/badge/IPAM-NetBox-00ADD8) |
-| **📂 [InfoSec-Infrastructure-Hardening](https://github.com/PierreFamchon/System-Network-Infrastructure/tree/main/Corporate-Security-Integration/InfoSec-Infrastructure-Hardening)** | **Sécurisation SI**<br>Durcissement d'infrastructure, DNSSEC et WAF. | ![Sec](https://img.shields.io/badge/Sec-DNSSEC-red) ![WAF](https://img.shields.io/badge/Web-Nginx_WAF-009639) |
+| **📂 [Professional-Internship-Reports](./Corporate-Security-Integration/Professional-Internship-Reports)** | **Automatisation Réseau (Stage)**<br>Source of Truth (SoT) avec NetBox et NetDisco. | ![Docker](https://img.shields.io/badge/Virt-Docker-2496ED) ![Netbox](https://img.shields.io/badge/IPAM-NetBox-00ADD8) |
+| **📂 [InfoSec-Infrastructure-Hardening](./Corporate-Security-Integration/InfoSec-Infrastructure-Hardening)** | **[Sécurisation SI](./Corporate-Security-Integration/InfoSec-Infrastructure-Hardening)**<br>Durcissement d'infrastructure, DNSSEC et WAF. | ![Sec](https://img.shields.io/badge/Sec-DNSSEC-red) ![WAF](https://img.shields.io/badge/Web-Nginx_WAF-009639) |
 
 
 ---
