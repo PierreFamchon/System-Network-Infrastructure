@@ -66,6 +66,8 @@ Voici l'organisation globale des fichiers et projets présents dans ce répertoi
 
 ### **📈 BUT SEMESTRE 4 :  📂 [Corporate-Security-Integration/](./Corporate-Security-Integration)**
 
+<br> 
+
 | Projet | Thématique | Technologies Clés |
 | :--- | :--- | :--- |
 | **📂 [Professional-Internship-Reports](./Corporate-Security-Integration/Professional-Internship-Reports)** | **Automatisation Réseau (Stage)**<br>Source of Truth (SoT) avec NetBox et NetDisco. | ![Docker](https://img.shields.io/badge/Virt-Docker-2496ED) ![Netbox](https://img.shields.io/badge/IPAM-NetBox-00ADD8) |
