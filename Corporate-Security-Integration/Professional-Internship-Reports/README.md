@@ -2,7 +2,7 @@
 
   <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="Logo Network Discovery" width="120" height="120">
 
-  # 📡 Network Discovery & Inventory Automation
+  # 📡 Network Discovery & Inventory Automatsatiion
 
   **Stage à la DSI de l'UTC (Université Technologique de Compiègne).**
 
