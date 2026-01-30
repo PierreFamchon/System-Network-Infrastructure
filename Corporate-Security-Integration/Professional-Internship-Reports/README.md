@@ -70,14 +70,6 @@ L'architecture des scripts est organisée pour séparer les données sources de 
 │   ├── ⚙️ deployment.yml               # Configuration du déploiement
 │   └── ⚙️ production.yml               # Variables d'environnement de production
 │
-├── 📂 documentation/
-│   ├── 📊 Alimentation-Baies...xlsx    # Inventaire électrique des baies
-│   ├── 📊 Assets_Inventory...xlsx      # Inventaire global des assets (2023)
-│   ├── 📊 Implantations-Baies...ods    # Plans d'implantation physique
-│   ├── 📊 matrcice utc V5.xlsx         # Matrice de flux / réseau
-│   ├── 📄 Bilan d avancement.txt       # Suivi de projet
-│   └── 📄 objectifs.txt                # Objectifs du stage
-│
 ├── 📂 migration/
 │   ├── 📊 netbox_appareils.csv         # Import : Liste des équipements
 │   ├── 📊 netbox_cables.csv            # Import : Câblage structuré
