@@ -1,6 +1,0 @@
-
-         ap-cima-1:
-            type: ap
-            ip_address: 172.20.200.0
-            mac_address: 78:72:5D:12:A4:A0
-            ports: G0/1-2, G1/1-2
