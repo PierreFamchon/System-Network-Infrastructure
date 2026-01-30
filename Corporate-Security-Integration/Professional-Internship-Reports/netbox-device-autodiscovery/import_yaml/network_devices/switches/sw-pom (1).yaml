@@ -1,6 +1,0 @@
-
-  # Pommery
-  sw-pom-1:
-    type: cisco-switch
-    ip_address: 172.20.119.1
-    ports: Gi1/0/1-24

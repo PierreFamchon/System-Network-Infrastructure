@@ -1,6 +1,0 @@
-
-  sw-hds-1:
-    description: "HDS"
-    type: cisco-switch
-    ip_address: 172.20.18.231
-    ports: Gi1/0/1-44

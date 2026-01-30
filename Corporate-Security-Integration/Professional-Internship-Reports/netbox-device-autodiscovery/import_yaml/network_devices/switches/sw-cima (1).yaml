@@ -1,5 +1,0 @@
-# CIMA
-         sw-cima-1:
-            type: cisco-switch
-            ip_address: 172.20.31.1
-            ports: Gi1/0/1-48

@@ -1,9 +1,0 @@
-
-  sw-5000-1:
-    description: "DSI Bureau du 5000 (2960C)"
-    type: cisco-switch
-    ip_address: 172.20.128.0
-  sw-5000-2:
-    description: "DSI Bureau du 5000 (2960C)"
-    type: cisco-switch
-    ip_address: 172.20.128.1

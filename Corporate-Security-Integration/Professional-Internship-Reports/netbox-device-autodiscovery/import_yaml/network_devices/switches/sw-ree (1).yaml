@@ -1,6 +1,0 @@
-
-  sw-ree-1:
-    description: "REE"
-    type: cisco-switch
-    ip_address: 172.20.18.221
-    ports: Gi1/0/1-48
