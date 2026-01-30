@@ -52,7 +52,7 @@ Voici l'organisation globale des fichiers et projets présents dans ce répertoi
 ## 🎓 Détail des Semestres
 
 ### 📂 BUT SEMESTRE 3 :
-[Telecoms-Network-Engineering](./Telecoms-Network-Engineering)
+**📂 [Telecoms-Network-Engineering](./Telecoms-Network-Engineering)**
 
 | Projet | Thématique | Technologies Clés |
 | :--- | :--- | :--- |
@@ -61,9 +61,8 @@ Voici l'organisation globale des fichiers et projets présents dans ce répertoi
 | **📂 [WAN-Routing-Architecture](./Telecoms-Network-Engineering/WAN-Routing-Architecture)** | **Architecture Multi-Sites**<br>Interconnexion réseau d'entreprise et routage. | ![Cisco](https://img.shields.io/badge/Net-Cisco-1BA0D7) ![Routing](https://img.shields.io/badge/Proto-OSPF%2FHSRP-green) |
 | **📂 [Offensive-Security-Pentesting](./Telecoms-Network-Engineering/Offensive-Security-Pentesting)** | **Pentesting**<br>Audit de vulnérabilités et CTF (Capture The Flag). | ![Kali](https://img.shields.io/badge/OS-Kali_Linux-557C94) ![Metasploit](https://img.shields.io/badge/Tool-Metasploit-333333) |
 
-### 📂 BUT SEMESTRE 4
-
-[Corporate-Security-Integration](./Corporate-Security-Integration)
+### 📂 BUT SEMESTRE 4 :
+**📂 [Corporate-Security-Integration](./Corporate-Security-Integration)**
 
 | Projet | Thématique | Technologies Clés |
 | :--- | :--- | :--- |
