@@ -5,22 +5,19 @@ database:
   user: 'netdisco'
   pass: 'netdisco'
   #host: 'netdisco-postgresql'
-  port: 5432
+  port: xxx
 
 domain_suffix: 'localdomain'
 site_name: 'Réseau SNMP'
 
-# Clé de session requise pour Netdisco Web
-#session_cookie_key: 'd43b52e4f1d44f39b681db9494a7d2cf0fc2e2a9a79be30fc2d4039e037f47b2'
-
 device_auth:
   - tag: 'snmpv3'
-    user: stagiaire
+    user: pierre
     auth:
-      pass: nJS9cq5TFwWnQs
+      pass: xxx
       proto: SHA
     priv:
-      pass: DHGC5uxBGBpn4d
+      pass: xxx
       proto: AES
 
     
