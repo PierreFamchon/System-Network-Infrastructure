@@ -2,7 +2,7 @@
 
   <img src="https://cdn-icons-png.flaticon.com/512/10832/10832132.png" alt="Logo Portfolio" width="120" height="120">
 
-  # Portfolio Projets - BUT R&T (2ème année)
+  # Portfolio Projets - BUT R&T (2ème Année)
   
   **Réseaux, Télécommunications & Cybersécurité**
 
