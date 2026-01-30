@@ -49,7 +49,7 @@ Voici l'organisation globale des fichiers et projets présents dans ce répertoi
 ```
 ---
 
-## 🎓 RT2 : Détail des Semestres :    📂 System-Network-Infrastructure
+## 🎓 RT2 : Détail des Semestres :  📂 [System-Network-Infrastructure/](./)
 
 ### **📈 BUT SEMESTRE 3 :  📂 [Telecoms-Network-Engineering/](./Telecoms-Network-Engineering)**
 
