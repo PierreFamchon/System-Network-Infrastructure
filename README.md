@@ -53,12 +53,16 @@ Voici l'organisation globale des fichiers et projets présents dans ce répertoi
 
 ### **📈 BUT SEMESTRE 3 :  📂 [Telecoms-Network-Engineering/](./Telecoms-Network-Engineering)**
 
+<br>
+
 | Projet | Thématique | Technologies Clés |
 | :--- | :--- | :--- |
 | **📂 [Signal-Transmission-Systems](./Telecoms-Network-Engineering/Signal-Transmission-Systems)** | **Système de Transmission (SDR)**<br>Analyse spectrale et transmission vidéo. | ![SDR](https://img.shields.io/badge/HW-Adalm_Pluto-blue) ![GNU](https://img.shields.io/badge/Soft-GNU_Radio-orange) |
 | **📂 [Network-Socket-Programming](./Telecoms-Network-Engineering/Network-Socket-Programming)** | **App Communicante**<br>Moteur de recherche multi-formats (PDF, Excel, Web). | ![Python](https://img.shields.io/badge/Dev-Python_Flask-yellow) ![Regex](https://img.shields.io/badge/Logic-Regex-lightgrey) |
 | **📂 [WAN-Routing-Architecture](./Telecoms-Network-Engineering/WAN-Routing-Architecture)** | **Architecture Multi-Sites**<br>Interconnexion réseau d'entreprise et routage. | ![Cisco](https://img.shields.io/badge/Net-Cisco-1BA0D7) ![Routing](https://img.shields.io/badge/Proto-OSPF%2FHSRP-green) |
 | **📂 [Offensive-Security-Pentesting](./Telecoms-Network-Engineering/Offensive-Security-Pentesting)** | **Pentesting**<br>Audit de vulnérabilités et CTF (Capture The Flag). | ![Kali](https://img.shields.io/badge/OS-Kali_Linux-557C94) ![Metasploit](https://img.shields.io/badge/Tool-Metasploit-333333) |
+
+<br> 
 
 ### **📈 BUT SEMESTRE 4 :  📂 [Corporate-Security-Integration/](./Corporate-Security-Integration)**
 
