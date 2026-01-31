@@ -74,10 +74,11 @@ L'environnement principal de développement est GNU Radio.
 Clonez ce dépôt pour accéder aux fichiers .grc (GNU Radio Companion) :
 
   ```bash
-git clone [https://github.com/PierreFamchon/RT2-Projets.git](https://github.com/PierreFamchon/RT2-Projets.git)
-cd BUT SEMESTRE 3_SAE
-cd SAE3.01 - Etude et mise en oeuvre d’un système de transmission
+git clone [https://github.com/PierreFamchon/System-Network-Infrastructure.git](https://github.com/PierreFamchon/System-Network-Infrastructure.git)
+cd Telecoms-Network-Engineering
+cd Signal-Transmission-Systems
    ```
+
 ### 5. Connexion 
 Connectez l'Adalm Pluto en USB. Vérifiez qu'il est reconnu comme un périphérique réseau (généralement 192.168.2.1).
 
