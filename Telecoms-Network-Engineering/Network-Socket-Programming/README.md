@@ -123,12 +123,11 @@ Assurez-vous d'avoir [Python 3](https://www.python.org/downloads/) installé sur
 Récupérez le code source via Git :
 
 ```bash
-git clone git clone https://github.com/PierreFamchon/RT2-Projets.git](https://github.com/PierreFamchon/RT2-Projets.git)
-cd RT2-Projets
-cd "BUT SEMESTRE 3 _ SAE"
-cd "SAE3.02 - Développer des applications..."
+git clone git clone https://github.com/PierreFamchon/System-Network-Infrastructure.git](https://github.com/PierreFamchon/System-Network-Infrastructure.git)
+cd System-Network-Infrastructure
+cd Telecoms-Network-Engineering
+cd Network-Socket-Programming
 ```
-
 ### 3. Installer les Dépendances
 Installez les bibliothèques nécessaires listées dans `requirements.txt` :
 
