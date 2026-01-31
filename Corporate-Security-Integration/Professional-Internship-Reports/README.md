@@ -158,7 +158,10 @@ C'est ici que réside la logique métier du projet. Clonez le dépôt contenant 
 
 ```bash
 # Récupération du dossier essentiel contenant la logique Python
-git clone [https://github.com/votre-user/netbox-device-autodiscovery.git](https://github.com/votre-user/netbox-device-autodiscovery.git)
+git clone [https://github.com/PierreFamchon/System-Network-Infrastructure.git](https://github.com/PierreFamchon/System-Network-Infrastructure.git)
+cd System-Network-Infrastructure
+cd Corporate-Security-Integration
+cd Professional-Internship-Reports
 
 # Installation des dépendances Python requises
 cd netbox-device-autodiscovery
