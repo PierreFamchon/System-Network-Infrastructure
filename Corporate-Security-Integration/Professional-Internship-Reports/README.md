@@ -201,11 +201,28 @@ python3 main.py
 
 ---
 
-## 🚀 Phases du Projet
+## 📅 Déroulement du Projet
+Le projet s'est déroulé en trois phases majeures, transformant une infrastructure manuelle en un système automatisé basé sur une "Source of Truth" (SoT).
 
-* Architecture : Mise en place de l'écosystème Docker et communication inter-conteneurs.
-* Découverte : Configuration de NetDisco (SNMP/LLDP) pour remonter automatiquement l'inventaire brut.
-* Automatisation : Développement des scripts Python pour transformer les données brutes en objets structurés NetBox (Patch vs Post).
+### Phase 1 : Architecture & Conteneurisation
+
+* Déploiement de l'écosystème Docker pour héberger la solution de découverte réseau.
+* Configuration du docker-compose pour orchestrer les différents services (Base de données PostgreSQL, Backend NetDisco, Interface Web).
+* Mise en place des réseaux virtuels Docker pour assurer une communication inter-conteneurs fluide et sécurisée.
+
+### Phase 2 : Découverte & Inventaire Brut (NetDisco)
+
+* Configuration des protocoles de découverte SNMP (v2c/v3) et LLDP pour scanner l'ensemble du parc informatique.
+* Lancement des tâches de "Discovery" pour remonter automatiquement la topologie réseau et les équipements connectés.
+* Génération d'un inventaire brut (Raw Data) contenant les adresses MAC, IPs, et les relations de voisinage entre les équipements.
+
+### Phase 3 : Automatisation & Intégration (NetBox)
+
+* Développement de scripts Python pour extraire, nettoyer et structurer les données brutes issues de NetDisco.
+* Implémentation d'une logique de synchronisation intelligente vers NetBox (IPAM/DCIM) :
+  * POST : Création automatique des nouveaux équipements s'ils n'existent pas.
+  * PATCH : Mise à jour des équipements existants (modification de ports, changement d'IP) sans écraser les données manuelles critiques.
+* Interaction via l'API REST de NetBox pour peupler les objets structurés (Sites, Fabricants, Racks, Câblage).
 
 ---
 
