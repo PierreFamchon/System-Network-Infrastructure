@@ -143,7 +143,15 @@ L'arborescence du projet est organisée comme suit :
 ---
 
 ## ⚙ Installation
-### 1. Configuration Réseau (Cisco)
+
+### 1. Clone du Dépot 
+
+```bash
+git clone [https://github.com/PierreFamchon/System-Network-Infrastructure.git](https://github.com/PierreFamchon/System-Network-Infrastructure.git)
+cd Corporate-Security-Integration
+cd InfoSec-Infrastructure-Hardening
+```
+### 2. Configuration Réseau (Cisco)
 
 Charger les configurations sur les équipements respectifs. Assurez-vous d'activer le chiffrement des mots de passe :
 
@@ -152,13 +160,13 @@ service password-encryption
 username admin privilege 15 secret 5 $1$mERr$tN2nmMK5hNorN4zAZEGGz.
 ip ssh version 2
 ```
-### 2. Serveur DNS (Windows)
+### 3. Serveur DNS (Windows)
 
 * Installer le rôle Serveur DNS.
 * Créer la zone societe2.pepiniere.rt.
 * Signer la zone via DNSSEC (RSA/SHA-256, 2048 bits).
 
-### 3. Serveur Web (Linux)
+### 4. Serveur Web (Linux)
 
 Installer Nginx et Python, puis configurer le WAF dans /etc/nginx/sites-available/flask_app :
 
