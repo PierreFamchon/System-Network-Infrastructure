@@ -101,6 +101,16 @@ Voici l'organisation détaillée des fichiers du projet :
 ---
 
 ## ⚙️ <a name="installation"></a>Installation et Configuration
+
+### Clone du Dépot 
+
+```bash
+git clone [https://github.com/PierreFamchon/System-Network-Infrastructure.git](https://github.com/PierreFamchon/System-Network-Infrastructure.git)
+cd System-Network-Infrastructure
+cd Telecoms-Network-Engineering
+cd WAN-Routing-Architecture
+```
+
 ### 🐳 Services Web (Docker)
 L'application Web et la base de données sont conteneurisées.
 
