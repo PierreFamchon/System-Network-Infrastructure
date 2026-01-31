@@ -179,13 +179,45 @@ Générer les certificats SSL auto-signés via OpenSSL.
 
 ---
 
-## 🚀 Phases du Projet
+## 📅 Déroulement du Projet
+Ce projet de sécurisation a été mené en plusieurs étapes successives, allant du durcissement de l'infrastructure réseau à la validation des défenses par audit offensif.
 
-* Architecture & Adressage : Définition des VLANs et du plan d'adressage IP .
-* Mise en œuvre Réseau : Configuration du routage OSPF, du Tunnel GRE/IPSEC et des ACLs.
-* Sécurisation DNS : Déploiement de DNSSEC pour empêcher le DNS Spoofing.
-* Sécurisation Web : Développement de l'app Flask sécurisée et durcissement Nginx.
-* Pentesting : Tests d'intrusion pour valider les défenses.
+### Phase 1 : Architecture & Adressage
+
+* Définition du plan d'adressage IP et segmentation stricte.
+* Création des VLANs pour cloisonner les environnements et réduire la surface d'attaque :
+  * VLAN Admin (Gestion)
+  * VLAN Serveurs (DMZ)
+  * VLAN Utilisateurs
+
+### Phase 2 : Mise en œuvre Réseau & Chiffrement
+
+* Configuration du routage dynamique OSPF avec authentification pour sécuriser les échanges de routes.
+* Déploiement des ACLs (Access Control Lists) sur les routeurs de bordure pour filtrer les flux illégitimes.
+* Mise en place d'un Tunnel GRE encapsulé dans IPsec :
+  * Objectif : Interconnecter les sites distants tout en garantissant la confidentialité et l'intégrité des données transitant sur le WAN.
+
+### Phase 3 : Sécurisation de l'Infrastructure (DNS)
+
+* Installation et configuration du service DNS.
+* Déploiement de DNSSEC (Domain Name System Security Extensions) :
+  * Signature cryptographique des zones DNS.
+  * Objectif : Garantir l'authenticité des réponses et empêcher les attaques de type DNS Spoofing ou Cache Poisoning.
+
+### Phase 4 : Durcissement Web & Applicatif
+
+* Développement d'une application sécurisée en Python (Flask) (Validation des entrées, protection CSRF).
+* Mise en place d'un Reverse Proxy Nginx durci :
+  * Masquage des versions du serveur.
+  * Configuration TLS/SSL.
+  * Filtrage des requêtes malveillantes (WAF basique).
+
+### Phase 5 : Audit & Pentesting (Validation)
+Une fois l'infrastructure défensive en place, une phase offensive a été réalisée pour éprouver la sécurité :
+
+* Reconnaissance : Scans réseaux pour identifier les ports ouverts.
+* Exploitation : Tentatives d'intrusions simulées pour vérifier l'efficacité des ACLs, du DNSSEC et du durcissement Web.
+* Validation : Confirmation que les mesures de protection bloquent les vecteurs d'attaque identifiés.
 
 ---
 
