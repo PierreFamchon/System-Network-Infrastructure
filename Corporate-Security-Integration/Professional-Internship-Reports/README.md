@@ -153,10 +153,22 @@ chmod 777 logs config nd-site-local
 sudo docker compose up -d
 ```
 
-### 2. Configuration des Scripts
-Editez le fichier netbox-device-autodiscovery/import_yaml/netbox_config.py avec vos accès :
+### 2. Installation du Cœur d'Authentification 
+C'est ici que réside la logique métier du projet. Clonez le dépôt contenant les scripts Python de synchronisation :
 
 ```bash
+# Récupération du dossier essentiel contenant la logique Python
+git clone [https://github.com/votre-user/netbox-device-autodiscovery.git](https://github.com/votre-user/netbox-device-autodiscovery.git)
+
+# Installation des dépendances Python requises
+cd netbox-device-autodiscovery
+pip install requests pyyaml icecream toml
+```
+
+### 3. Configuration des Scripts
+Editez le fichier netbox-device-autodiscovery/import_yaml/netbox_config.py avec vos accès :
+
+```python
 # netbox_config.py
 NETBOX_URL = "[http://192.168.100.160:8000/api/](http://192.168.100.160:8000/api/)"
 NETBOX_TOKEN = "votre_token_api_genere_dans_netbox" # ex: 04946ef59...
@@ -166,7 +178,7 @@ HEADERS = {
 }
 DEBUG_MODE = True
 ```
-### 3. Utilisation / Exécution
+### 4. Utilisation / Exécution
 
 * **Étape A :**
   Préparation des données (Export NetDisco) Si vous n'utilisez pas de fichiers YAML manuels, exportez les données découvertes par NetDisco en CSV directement depuis la base de données :
